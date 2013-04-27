@@ -4,8 +4,8 @@ alfred-workflows-scientific
 A collection of [Alfred v2](http://www.alfredapp.com) workflows (mostly) targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
 
 - [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
-- [BibTeX Grab](https://github.com/andrewning/alfred-workflows-scientific#bibtex-grab): lookup articles using any metadata and download the associated BibTeX entry (article's DOI must registered with IDF).
-- [AIAA Search](https://github.com/andrewning/alfred-workflows-scientific#aiaa-search): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
+- [BibTeX Grab](#bibtex-grab): lookup articles using any metadata and download the associated BibTeX entry (article's DOI must registered with IDF).
+- [AIAA Search](#aiaa-search): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
 
 
 
