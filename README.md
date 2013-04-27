@@ -3,12 +3,12 @@ alfred-workflows-scientific
 
 A collection of [Alfred v2](http://www.alfredapp.com) workflows (mostly) targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
 
-- [NumPy Search](#numpy): search methods within the NumPy module and open the associated documentation in your browser.
-- [BibTeX Grab](#bibtex): lookup articles using any metadata and download the associated BibTeX entry (article's DOI must registered with IDF).
-- [AIAA Search](#aiaa): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
+- [NumPy Search](https://github.com/andrewning/alfred-workflows-scientific#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
+- [BibTeX Grab](https://github.com/andrewning/alfred-workflows-scientific#bibtex-grab): lookup articles using any metadata and download the associated BibTeX entry (article's DOI must registered with IDF).
+- [AIAA Search](https://github.com/andrewning/alfred-workflows-scientific#aiaa-search): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
 
 
-<a id="numpy"></a>
+
 NumPy Search
 ------------
 
@@ -25,7 +25,7 @@ The workflow contains a cached version of the relevant information from the NumP
 #### [[Download NumPy Search](https://github.com/andrewning/alfred-workflows-scientific/raw/master/numpy-search/NumPy%20Search.alfredworkflow)]
 
 
-<a id="bibtex"></a>
+
 BibTeX Grab
 -----------
 
@@ -38,7 +38,7 @@ Uses a metadata search api (beta) provided by [CrossRef](http://search.labs.cros
 #### [[Download BibTeX Grab](https://github.com/andrewning/alfred-workflows-scientific/raw/master/bibtex-grab/BibTeX%20Grab.alfredworkflow)]
 
 
-<a id="aiaa"></a>
+
 AIAA Search
 -----------
 
