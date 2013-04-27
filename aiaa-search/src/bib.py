@@ -60,9 +60,10 @@ for line in r.text.split('\n'):
     elif key == 'Y1':
         month = months[int(value.split('/')[1])]
 
-firstAuthor = authors.split(',')[0]
+firstAuthor = authors.split(' and')[0]
 lastName = firstAuthor.split(' ')[-1]
 cite_key = lastName + year
+
 
 # if ',' in firstAuthor:
 #     cite_key = firstAuthor.split(',')[0] + year
