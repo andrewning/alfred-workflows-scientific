@@ -1,0 +1,1693 @@
+(dp1
+S''
+(S'The '
+S'http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html#numpy.newaxis'
+tp2
+sS'union1d'
+p3
+(S'Find the union of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.union1d.html#numpy.union1d'
+tp4
+sS'all'
+p5
+(S'Test whether all array elements along a given axis evaluate to True.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.all.html#numpy.all'
+tp6
+sS'tan'
+p7
+(S'Compute tangent element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tan.html#numpy.tan'
+tp8
+sS'less'
+p9
+(S'Return the truth value of (x1 < x2) element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.less.html#numpy.less'
+tp10
+sS'alterdot'
+p11
+(S'Change '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.alterdot.html#numpy.alterdot'
+tp12
+sS'tri'
+p13
+(S'An array with ones at and below the given diagonal and zeros elsewhere.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tri.html#numpy.tri'
+tp14
+sS'dsplit'
+p15
+(S'Split array into multiple sub-arrays along the 3rd axis (depth).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.dsplit.html#numpy.dsplit'
+tp16
+sS'intersect1d'
+p17
+(S'Find the intersection of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.intersect1d.html#numpy.intersect1d'
+tp18
+sS'is_busday'
+p19
+(S'Calculates which of the given dates are valid days, and which are not.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.is_busday.html#numpy.is_busday'
+tp20
+sS'can_cast'
+p21
+(S'Returns True if cast between data types can occur according to the\ncasting rule.  If from is a scalar or array scalar, also returns\nTrue if the scalar value can be cast without overflow or truncation\nto an integer.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.can_cast.html#numpy.can_cast'
+tp22
+sS'sort_complex'
+p23
+(S'Sort a complex array using the real part first, then the imaginary part.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sort_complex.html#numpy.sort_complex'
+tp24
+sS'atleast_2d'
+p25
+(S'View inputs as arrays with at least two dimensions.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.atleast_2d.html#numpy.atleast_2d'
+tp26
+sS'setbufsize'
+p27
+(S'Set the size of the buffer used in ufuncs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.setbufsize.html#numpy.setbufsize'
+tp28
+sS'ppmt'
+p29
+(S'Compute the payment against loan principal.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ppmt.html#numpy.ppmt'
+tp30
+sS'restoredot'
+p31
+(S'Restore '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.restoredot.html#numpy.restoredot'
+tp32
+sS'polymul'
+p33
+(S'Find the product of two polynomials.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polymul.html#numpy.polymul'
+tp34
+sS'cumsum'
+p35
+(S'Return the cumulative sum of the elements along a given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.cumsum.html#numpy.cumsum'
+tp36
+sS'savetxt'
+p37
+(S'Save an array to a text file.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html#numpy.savetxt'
+tp38
+sS'roots'
+p39
+(S'Return the roots of a polynomial with coefficients given in p.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.roots.html#numpy.roots'
+tp40
+sS'divide'
+p41
+(S'Divide arguments element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.divide.html#numpy.divide'
+tp42
+sS'tril_indices_from'
+p43
+(S'Return the indices for the lower-triangle of arr.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tril_indices_from.html#numpy.tril_indices_from'
+tp44
+sS'squeeze'
+p45
+(S'Remove single-dimensional entries from the shape of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.squeeze.html#numpy.squeeze'
+tp46
+sS'isscalar'
+p47
+(S'Returns True if the type of '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isscalar.html#numpy.isscalar'
+tp48
+sS'fix'
+p49
+(S'Round to nearest integer towards zero.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fix.html#numpy.fix'
+tp50
+sS'busday_count'
+p51
+(S'Counts the number of valid days between '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.busday_count.html#numpy.busday_count'
+tp52
+sS'frexp'
+p53
+(S'Split the number, x, into a normalized fraction (y1) and exponent (y2)'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.frexp.html#numpy.frexp'
+tp54
+sS'kron'
+p55
+(S'Kronecker product of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.kron.html#numpy.kron'
+tp56
+sS'add'
+p57
+(S'Add arguments element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.add.html#numpy.add'
+tp58
+sS'polysub'
+p59
+(S'Difference (subtraction) of two polynomials.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polysub.html#numpy.polysub'
+tp60
+sS'degrees'
+p61
+(S'Convert angles from radians to degrees.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.degrees.html#numpy.degrees'
+tp62
+sS'choose'
+p63
+(S'Construct an array from an index array and a set of arrays to choose from.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.choose.html#numpy.choose'
+tp64
+sS'swapaxes'
+p65
+(S'Interchange two axes of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.swapaxes.html#numpy.swapaxes'
+tp66
+sS'blackman'
+p67
+(S'Return the Blackman window.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.blackman.html#numpy.blackman'
+tp68
+sS'obj2sctype'
+p69
+(S'Return the scalar dtype or NumPy equivalent of Python type of an object.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.obj2sctype.html#numpy.obj2sctype'
+tp70
+sS'fill_diagonal'
+p71
+(S'Fill the main diagonal of the given array of any dimensionality.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fill_diagonal.html#numpy.fill_diagonal'
+tp72
+sS'nonzero'
+p73
+(S'Return the indices of the elements that are non-zero.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nonzero.html#numpy.nonzero'
+tp74
+sS'sin'
+p75
+(S'Trigonometric sine, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sin.html#numpy.sin'
+tp76
+sS'ravel'
+p77
+(S'Return a flattened array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ravel.html#numpy.ravel'
+tp78
+sS'take'
+p79
+(S'Take elements from an array along an axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.take.html#numpy.take'
+tp80
+sS'real'
+p81
+(S'Return the real part of the elements of the array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.real.html#numpy.real'
+tp82
+sS'empty_like'
+p83
+(S'Return a new array with the same shape and type as a given array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.empty_like.html#numpy.empty_like'
+tp84
+sS'issubsctype'
+p85
+(S'Determine if the first argument is a subclass of the second argument.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.issubsctype.html#numpy.issubsctype'
+tp86
+sS'logaddexp2'
+p87
+(S'Logarithm of the sum of exponentiations of the inputs in base-2.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logaddexp2.html#numpy.logaddexp2'
+tp88
+sS'around'
+p89
+(S'Evenly round to the given number of decimals.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.around.html#numpy.around'
+tp90
+sS'polyval'
+p91
+(S'Evaluate a polynomial at specific values.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polyval.html#numpy.polyval'
+tp92
+sS'digitize'
+p93
+(S'Return the indices of the bins to which each value in input array belongs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.digitize.html#numpy.digitize'
+tp94
+sS'lexsort'
+p95
+(S'Perform an indirect sort using a sequence of keys.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.lexsort.html#numpy.lexsort'
+tp96
+sS'ceil'
+p97
+(S'Return the ceiling of the input, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ceil.html#numpy.ceil'
+tp98
+sS'polyint'
+p99
+(S'Return an antiderivative (indefinite integral) of a polynomial.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polyint.html#numpy.polyint'
+tp100
+sS'ones'
+p101
+(S'Return a new array of given shape and type, filled with ones.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones'
+tp102
+sS'ipmt'
+p103
+(S'Compute the interest portion of a payment.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ipmt.html#numpy.ipmt'
+tp104
+sS'issubclass_'
+p105
+(S'Determine if a class is a subclass of a second class.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.issubclass_.html#numpy.issubclass_'
+tp106
+sS'atleast_3d'
+p107
+(S'View inputs as arrays with at least three dimensions.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.atleast_3d.html#numpy.atleast_3d'
+tp108
+sS'isneginf'
+p109
+(S'Test element-wise for negative infinity, return result as bool array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isneginf.html#numpy.isneginf'
+tp110
+sS'unique'
+p111
+(S'Find the unique elements of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.unique.html#numpy.unique'
+tp112
+sS'floor_divide'
+p113
+(S'Return the largest integer smaller or equal to the division of the inputs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.floor_divide.html#numpy.floor_divide'
+tp114
+sS'mod'
+p115
+(S'Return element-wise remainder of division.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mod.html#numpy.mod'
+tp116
+sS'signbit'
+p117
+(S'Returns element-wise True where signbit is set (less than zero).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.signbit.html#numpy.signbit'
+tp118
+sS'insert'
+p119
+(S'Insert values along the given axis before the given indices.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.insert.html#numpy.insert'
+tp120
+sS'prod'
+p121
+(S'Return the product of array elements over a given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.prod.html#numpy.prod'
+tp122
+sS'array_equal'
+p123
+(S'True if two arrays have the same shape and elements, False otherwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.array_equal.html#numpy.array_equal'
+tp124
+sS'__array__'
+p125
+(S'This method is called whenever the system internally allocates a\nnew array from '
+S'http://docs.scipy.org/doc/numpy/reference/arrays.classes.html#numpy.__array__'
+tp126
+sS'array_equiv'
+p127
+(S'Returns True if input arrays are shape consistent and all elements equal.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.array_equiv.html#numpy.array_equiv'
+tp128
+sS'asfarray'
+p129
+(S'Return an array converted to a float type.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.asfarray.html#numpy.asfarray'
+tp130
+sS'getbufsize'
+p131
+(S'Return the size of the buffer used in ufuncs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.getbufsize.html#numpy.getbufsize'
+tp132
+sS'isfortran'
+p133
+(S'Returns True if array is arranged in Fortran-order in memory\nand dimension > 1.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isfortran.html#numpy.isfortran'
+tp134
+sS'median'
+p135
+(S'Compute the median along the specified axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.median.html#numpy.median'
+tp136
+sS'radians'
+p137
+(S'Convert angles from degrees to radians.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.radians.html#numpy.radians'
+tp138
+sS'arange'
+p139
+(S'Return evenly spaced values within a given interval.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html#numpy.arange'
+tp140
+sS'geterr'
+p141
+(S'Get the current way of handling floating-point errors.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.geterr.html#numpy.geterr'
+tp142
+sS'sum'
+p143
+(S'Sum of array elements over a given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sum.html#numpy.sum'
+tp144
+sS'fliplr'
+p145
+(S'Flip array in the left/right direction.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fliplr.html#numpy.fliplr'
+tp146
+sS'savez'
+p147
+(S'Save several arrays into a single file in uncompressed '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.savez.html#numpy.savez'
+tp148
+sS'convolve'
+p149
+(S'Returns the discrete, linear convolution of two one-dimensional sequences.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.convolve.html#numpy.convolve'
+tp150
+sS'source'
+p151
+(S'Print or write to a file the source code for a Numpy object.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.source.html#numpy.source'
+tp152
+sS'fmod'
+p153
+(S'Return the element-wise remainder of division.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fmod.html#numpy.fmod'
+tp154
+sS'indices'
+p155
+(S'Return an array representing the indices of a grid.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.indices.html#numpy.indices'
+tp156
+sS'isreal'
+p157
+(S'Returns a bool array, where True if input element is real.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isreal.html#numpy.isreal'
+tp158
+sS'unpackbits'
+p159
+(S'Unpacks elements of a uint8 array into a binary-valued output array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.unpackbits.html#numpy.unpackbits'
+tp160
+sS'vstack'
+p161
+(S'Stack arrays in sequence vertically (row wise).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html#numpy.vstack'
+tp162
+sS'isfinite'
+p163
+(S'Test element-wise for finite-ness (not infinity or not Not a Number).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isfinite.html#numpy.isfinite'
+tp164
+sS'npv'
+p165
+(S'Returns the NPV (Net Present Value) of a cash flow series.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.npv.html#numpy.npv'
+tp166
+sS'lookfor'
+p167
+(S'Do a keyword search on docstrings.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.lookfor.html#numpy.lookfor'
+tp168
+sS'pmt'
+p169
+(S'Compute the payment against loan principal plus interest.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.pmt.html#numpy.pmt'
+tp170
+sS'triu'
+p171
+(S'Upper triangle of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.triu.html#numpy.triu'
+tp172
+sS'square'
+p173
+(S'Return the element-wise square of the input.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.square.html#numpy.square'
+tp174
+sS'ogrid'
+p175
+(S'<em class="xref py py-obj">nd_grid</em>'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ogrid.html#numpy.ogrid'
+tp176
+sS'argmax'
+p177
+(S'Indices of the maximum values along an axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.argmax.html#numpy.argmax'
+tp178
+sS'in1d'
+p179
+(S'Test whether each element of a 1-D array is also present in a second array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.in1d.html#numpy.in1d'
+tp180
+sS'r_'
+p181
+(S'Translates slice objects to concatenation along the first axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.r_.html#numpy.r_'
+tp182
+sS'diag_indices_from'
+p183
+(S'Return the indices to access the main diagonal of an n-dimensional array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.diag_indices_from.html#numpy.diag_indices_from'
+tp184
+sS'setdiff1d'
+p185
+(S'Find the set difference of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.setdiff1d.html#numpy.setdiff1d'
+tp186
+sS'cosh'
+p187
+(S'Hyperbolic cosine, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.cosh.html#numpy.cosh'
+tp188
+sS'hanning'
+p189
+(S'Return the Hanning window.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.hanning.html#numpy.hanning'
+tp190
+sS'rate'
+p191
+(S'Compute the rate of interest per period.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.rate.html#numpy.rate'
+tp192
+sS'hypot'
+p193
+(S'Given the \xe2\x80\x9clegs\xe2\x80\x9d of a right triangle, return its hypotenuse.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.hypot.html#numpy.hypot'
+tp194
+sS'logical_and'
+p195
+(S'Compute the truth value of x1 AND x2 elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_and.html#numpy.logical_and'
+tp196
+sS'get_printoptions'
+p197
+(S'Return the current print options.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.get_printoptions.html#numpy.get_printoptions'
+tp198
+sS'diagflat'
+p199
+(S'Create a two-dimensional array with the flattened input as a diagonal.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.diagflat.html#numpy.diagflat'
+tp200
+sS'allclose'
+p201
+(S'Returns True if two arrays are element-wise equal within a tolerance.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.allclose.html#numpy.allclose'
+tp202
+sS'extract'
+p203
+(S'Return the elements of an array that satisfy some condition.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.extract.html#numpy.extract'
+tp204
+sS'append'
+p205
+(S'Append values to the end of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.append.html#numpy.append'
+tp206
+sS'mat'
+p207
+(S'Interpret the input as a matrix.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mat.html#numpy.mat'
+tp208
+sS'__array_wrap__'
+p209
+(S'This method is called whenever the system internally allocates a\nnew array from '
+S'http://docs.scipy.org/doc/numpy/reference/arrays.classes.html#numpy.__array_wrap__'
+tp210
+sS'where'
+p211
+(S'Return elements, either from '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html#numpy.where'
+tp212
+sS'isnan'
+p213
+(S'Test element-wise for Not a Number (NaN), return result as a bool array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isnan.html#numpy.isnan'
+tp214
+sS'kaiser'
+p215
+(S'Return the Kaiser window.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.kaiser.html#numpy.kaiser'
+tp216
+sS'nanargmax'
+p217
+(S'Return indices of the maximum values over an axis, ignoring NaNs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nanargmax.html#numpy.nanargmax'
+tp218
+sS'power'
+p219
+(S'First array elements raised to powers from second array, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.power.html#numpy.power'
+tp220
+sS'putmask'
+p221
+(S'Changes elements of an array based on conditional and input values.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.putmask.html#numpy.putmask'
+tp222
+sS'asarray'
+p223
+(S'Convert the input to an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.asarray.html#numpy.asarray'
+tp224
+sS'diag'
+p225
+(S'Extract a diagonal or construct a diagonal array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.diag.html#numpy.diag'
+tp226
+sS'irr'
+p227
+(S'Return the Internal Rate of Return (IRR).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.irr.html#numpy.irr'
+tp228
+sS'polyfit'
+p229
+(S'Least squares polynomial fit.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html#numpy.polyfit'
+tp230
+sS'sinc'
+p231
+(S'Return the sinc function.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sinc.html#numpy.sinc'
+tp232
+sS'nanmin'
+p233
+(S'Return the minimum of an array or minimum along an axis ignoring any NaNs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nanmin.html#numpy.nanmin'
+tp234
+sS'multiply'
+p235
+(S'Multiply arguments element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html#numpy.multiply'
+tp236
+sS'promote_types'
+p237
+(S'Returns the data type with the smallest size and smallest scalar\nkind to which both '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.promote_types.html#numpy.promote_types'
+tp238
+sS'min_scalar_type'
+p239
+(S'For scalar '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.min_scalar_type.html#numpy.min_scalar_type'
+tp240
+sS'count_nonzero'
+p241
+(S'Counts the number of non-zero values in the array '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.count_nonzero.html#numpy.count_nonzero'
+tp242
+sS'diag_indices'
+p243
+(S'Return the indices to access the main diagonal of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.diag_indices.html#numpy.diag_indices'
+tp244
+sS'nanmax'
+p245
+(S'Return the maximum of an array or maximum along an axis ignoring any NaNs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nanmax.html#numpy.nanmax'
+tp246
+sS'nan_to_num'
+p247
+(S'Replace nan with zero and inf with finite numbers.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nan_to_num.html#numpy.nan_to_num'
+tp248
+sS'concatenate'
+p249
+(S'Join a sequence of arrays together.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.concatenate.html#numpy.concatenate'
+tp250
+sS'logical_xor'
+p251
+(S'Compute the truth value of x1 XOR x2, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_xor.html#numpy.logical_xor'
+tp252
+sS'log2'
+p253
+(S'Base-2 logarithm of '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.log2.html#numpy.log2'
+tp254
+sS'modf'
+p255
+(S'Return the fractional and integral parts of an array, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.modf.html#numpy.modf'
+tp256
+sS'hstack'
+p257
+(S'Stack arrays in sequence horizontally (column wise).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.hstack.html#numpy.hstack'
+tp258
+sS'vdot'
+p259
+(S'Return the dot product of two vectors.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.vdot.html#numpy.vdot'
+tp260
+sS'bincount'
+p261
+(S'Count number of occurrences of each value in array of non-negative ints.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.bincount.html#numpy.bincount'
+tp262
+sS'fromregex'
+p263
+(S'Construct an array from a text file, using regular expression parsing.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromregex.html#numpy.fromregex'
+tp264
+sS'packbits'
+p265
+(S'Packs the elements of a binary-valued array into bits in a uint8 array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.packbits.html#numpy.packbits'
+tp266
+sS'copysign'
+p267
+(S'Change the sign of x1 to that of x2, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.copysign.html#numpy.copysign'
+tp268
+sS'diagonal'
+p269
+(S'Return specified diagonals.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.diagonal.html#numpy.diagonal'
+tp270
+sS'atleast_1d'
+p271
+(S'Convert inputs to arrays with at least one dimension.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.atleast_1d.html#numpy.atleast_1d'
+tp272
+sS'corrcoef'
+p273
+(S'Return correlation coefficients.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.corrcoef.html#numpy.corrcoef'
+tp274
+sS'meshgrid'
+p275
+(S'Return coordinate matrices from two or more coordinate vectors.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.meshgrid.html#numpy.meshgrid'
+tp276
+sS'resize'
+p277
+(S'Return a new array with the specified shape.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.resize.html#numpy.resize'
+tp278
+sS'seterrobj'
+p279
+(S'Set the object that defines floating-point error handling.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.seterrobj.html#numpy.seterrobj'
+tp280
+sS'column_stack'
+p281
+(S'Stack 1-D arrays as columns into a 2-D array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.column_stack.html#numpy.column_stack'
+tp282
+sS'put'
+p283
+(S'Replaces specified elements of an array with given values.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.put.html#numpy.put'
+tp284
+sS'outer'
+p285
+(S'Compute the outer product of two vectors.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.outer.html#numpy.outer'
+tp286
+sS'set_printoptions'
+p287
+(S'Set printing options.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.set_printoptions.html#numpy.set_printoptions'
+tp288
+sS'iscomplexobj'
+p289
+(S'Check for a complex type or an array of complex numbers.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.iscomplexobj.html#numpy.iscomplexobj'
+tp290
+sS'remainder'
+p291
+(S'Return element-wise remainder of division.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.remainder.html#numpy.remainder'
+tp292
+sS'issctype'
+p293
+(S'Determines whether the given object represents a scalar data-type.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.issctype.html#numpy.issctype'
+tp294
+sS'repeat'
+p295
+(S'Repeat elements of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.repeat.html#numpy.repeat'
+tp296
+sS'tensordot'
+p297
+(S'Compute tensor dot product along specified axes for arrays >= 1-D.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tensordot.html#numpy.tensordot'
+tp298
+sS'std'
+p299
+(S'Compute the standard deviation along the specified axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html#numpy.std'
+tp300
+sS'cos'
+p301
+(S'Cosine elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.cos.html#numpy.cos'
+tp302
+sS'frombuffer'
+p303
+(S'Interpret a buffer as a 1-dimensional array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.frombuffer.html#numpy.frombuffer'
+tp304
+sS'iscomplex'
+p305
+(S'Returns a bool array, where True if input element is complex.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.iscomplex.html#numpy.iscomplex'
+tp306
+sS'right_shift'
+p307
+(S'Shift the bits of an integer to the right.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.right_shift.html#numpy.right_shift'
+tp308
+sS'cov'
+p309
+(S'Estimate a covariance matrix, given data.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.cov.html#numpy.cov'
+tp310
+sS'log1p'
+p311
+(S'Return the natural logarithm of one plus the input array, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.log1p.html#numpy.log1p'
+tp312
+sS'nper'
+p313
+(S'Compute the number of periodic payments.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nper.html#numpy.nper'
+tp314
+sS'piecewise'
+p315
+(S'Evaluate a piecewise-defined function.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.piecewise.html#numpy.piecewise'
+tp316
+sS'asscalar'
+p317
+(S'Convert an array of size 1 to its scalar equivalent.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.asscalar.html#numpy.asscalar'
+tp318
+sS'equal'
+p319
+(S'Return (x1 == x2) element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.equal.html#numpy.equal'
+tp320
+sS'greater'
+p321
+(S'Return the truth value of (x1 > x2) element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.greater.html#numpy.greater'
+tp322
+sS'argsort'
+p323
+(S'Returns the indices that would sort an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.argsort.html#numpy.argsort'
+tp324
+sS'cumprod'
+p325
+(S'Return the cumulative product of elements along a given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.cumprod.html#numpy.cumprod'
+tp326
+sS'percentile'
+p327
+(S'Compute the qth percentile of the data along the specified axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.percentile.html#numpy.percentile'
+tp328
+sS'place'
+p329
+(S'Change elements of an array based on conditional and input values.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.place.html#numpy.place'
+tp330
+sS'vander'
+p331
+(S'Generate a Van der Monde matrix.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.vander.html#numpy.vander'
+tp332
+sS'arccos'
+p333
+(S'Trigonometric inverse cosine, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arccos.html#numpy.arccos'
+tp334
+sS'less_equal'
+p335
+(S'Return the truth value of (x1 =< x2) element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.less_equal.html#numpy.less_equal'
+tp336
+sS'geterrobj'
+p337
+(S'Return the current object that defines floating-point error handling.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.geterrobj.html#numpy.geterrobj'
+tp338
+sS'logaddexp'
+p339
+(S'Logarithm of the sum of exponentiations of the inputs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logaddexp.html#numpy.logaddexp'
+tp340
+sS'mean'
+p341
+(S'Compute the arithmetic mean along the specified axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html#numpy.mean'
+tp342
+sS'transpose'
+p343
+(S'Permute the dimensions of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.transpose.html#numpy.transpose'
+tp344
+sS'trim_zeros'
+p345
+(S'Trim the leading and/or trailing zeros from a 1-D array or sequence.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.trim_zeros.html#numpy.trim_zeros'
+tp346
+sS'ones_like'
+p347
+(S'Return an array of ones with the same shape and type as a given array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ones_like.html#numpy.ones_like'
+tp348
+sS'msort'
+p349
+(S'Return a copy of an array sorted along the first axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.msort.html#numpy.msort'
+tp350
+sS'load'
+p351
+(S'Load an array(s) or pickled objects from .npy, .npz, or pickled files.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.load.html#numpy.load'
+tp352
+sS'mgrid'
+p353
+(S'<em class="xref py py-obj">nd_grid</em>'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mgrid.html#numpy.mgrid'
+tp354
+sS'fromiter'
+p355
+(S'Create a new 1-dimensional array from an iterable object.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromiter.html#numpy.fromiter'
+tp356
+sS'arcsinh'
+p357
+(S'Inverse hyperbolic sine elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arcsinh.html#numpy.arcsinh'
+tp358
+sS'tril'
+p359
+(S'Lower triangle of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tril.html#numpy.tril'
+tp360
+sS'rint'
+p361
+(S'Round elements of the array to the nearest integer.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.rint.html#numpy.rint'
+tp362
+sS'sign'
+p363
+(S'Returns an element-wise indication of the sign of a number.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sign.html#numpy.sign'
+tp364
+sS'arctan2'
+p365
+(S'Element-wise arc tangent of '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arctan2.html#numpy.arctan2'
+tp366
+sS'ldexp'
+p367
+(S'Compute y = x1 * 2**x2.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ldexp.html#numpy.ldexp'
+tp368
+sS'bitwise_or'
+p369
+(S'Compute the bit-wise OR of two arrays element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.bitwise_or.html#numpy.bitwise_or'
+tp370
+sS'poly'
+p371
+(S'Find the coefficients of a polynomial with the given sequence of roots.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.poly.html#numpy.poly'
+tp372
+sS'bitwise_and'
+p373
+(S'Compute the bit-wise AND of two arrays element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.bitwise_and.html#numpy.bitwise_and'
+tp374
+sS'ix_'
+p375
+(S'Construct an open mesh from multiple sequences.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ix_.html#numpy.ix_'
+tp376
+sS'diff'
+p377
+(S'Calculate the n-th order discrete difference along given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.diff.html#numpy.diff'
+tp378
+sS'array'
+p379
+(S'Create an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array'
+tp380
+sS'vsplit'
+p381
+(S'Split an array into multiple sub-arrays vertically (row-wise).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.vsplit.html#numpy.vsplit'
+tp382
+sS'common_type'
+p383
+(S'Return a scalar type which is common to the input arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.common_type.html#numpy.common_type'
+tp384
+sS'select'
+p385
+(S'Return an array drawn from elements in choicelist, depending on conditions.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.select.html#numpy.select'
+tp386
+sS'deg2rad'
+p387
+(S'Convert angles from degrees to radians.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.deg2rad.html#numpy.deg2rad'
+tp388
+sS'array_split'
+p389
+(S'Split an array into multiple sub-arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.array_split.html#numpy.array_split'
+tp390
+sS'geterrcall'
+p391
+(S'Return the current callback function used on floating-point errors.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.geterrcall.html#numpy.geterrcall'
+tp392
+sS'eye'
+p393
+(S'Return a 2-D array with ones on the diagonal and zeros elsewhere.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.eye.html#numpy.eye'
+tp394
+sS'log'
+p395
+(S'Natural logarithm, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.log.html#numpy.log'
+tp396
+sS'newbuffer'
+p397
+(S'Return a new uninitialized buffer object.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.newbuffer.html#numpy.newbuffer'
+tp398
+sS'ptp'
+p399
+(S'Range of values (maximum - minimum) along an axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ptp.html#numpy.ptp'
+tp400
+sS'exp2'
+p401
+(S'Calculate '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.exp2.html#numpy.exp2'
+tp402
+sS'invert'
+p403
+(S'Compute bit-wise inversion, or bit-wise NOT, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.invert.html#numpy.invert'
+tp404
+sS'negative'
+p405
+(S'Returns an array with the negative of each element of the original array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.negative.html#numpy.negative'
+tp406
+sS'busday_offset'
+p407
+(S'First adjusts the date to fall on a valid day according to\nthe '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.busday_offset.html#numpy.busday_offset'
+tp408
+sS'mintypecode'
+p409
+(S'Return the character for the minimum-size type to which given types can\nbe safely cast.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mintypecode.html#numpy.mintypecode'
+tp410
+sS'round_'
+p411
+(S'Round an array to the given number of decimals.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.round_.html#numpy.round_'
+tp412
+sS'broadcast_arrays'
+p413
+(S'Broadcast any number of arrays against each other.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.broadcast_arrays.html#numpy.broadcast_arrays'
+tp414
+sS'c_'
+p415
+(S'Translates slice objects to concatenation along the second axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.c_.html#numpy.c_'
+tp416
+sS'inner'
+p417
+(S'Inner product of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.inner.html#numpy.inner'
+tp418
+sS'save'
+p419
+(S'Save an array to a binary file in NumPy '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.save.html#numpy.save'
+tp420
+sS'__array_priority__'
+p421
+(S'This method is called whenever the system internally allocates a\nnew array from '
+S'http://docs.scipy.org/doc/numpy/reference/arrays.classes.html#numpy.__array_priority__'
+tp422
+sS'zeros'
+p423
+(S'Return a new array of given shape and type, filled with zeros.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros'
+tp424
+sS'trunc'
+p425
+(S'Return the truncated value of the input, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.trunc.html#numpy.trunc'
+tp426
+sS'genfromtxt'
+p427
+(S'Load data from a text file, with missing values handled as specified.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.genfromtxt.html#numpy.genfromtxt'
+tp428
+sS'nanargmin'
+p429
+(S'Return indices of the minimum values over an axis, ignoring NaNs.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nanargmin.html#numpy.nanargmin'
+tp430
+sS'empty'
+p431
+(S'Return a new array of given shape and type, without initializing entries.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html#numpy.empty'
+tp432
+sS'sort'
+p433
+(S'Return a sorted copy of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sort.html#numpy.sort'
+tp434
+sS'find_common_type'
+p435
+(S'Determine common type following standard coercion rules.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.find_common_type.html#numpy.find_common_type'
+tp436
+sS'isposinf'
+p437
+(S'Test element-wise for positive infinity, return result as bool array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isposinf.html#numpy.isposinf'
+tp438
+sS'nansum'
+p439
+(S'Return the sum of array elements over a given axis treating\nNot a Numbers (NaNs) as zero.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.nansum.html#numpy.nansum'
+tp440
+sS'fromfile'
+p441
+(S'Construct an array from data in a text or binary file.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromfile.html#numpy.fromfile'
+tp442
+sS'arcsin'
+p443
+(S'Inverse sine, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arcsin.html#numpy.arcsin'
+tp444
+sS'interp'
+p445
+(S'One-dimensional linear interpolation.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.interp.html#numpy.interp'
+tp446
+sS'imag'
+p447
+(S'Return the imaginary part of the elements of the array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.imag.html#numpy.imag'
+tp448
+sS'sctype2char'
+p449
+(S'Return the string representation of a scalar dtype.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sctype2char.html#numpy.sctype2char'
+tp450
+sS'expm1'
+p451
+(S'Calculate '
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.expm1.html#numpy.expm1'
+tp452
+sS'histogram'
+p453
+(S'Compute the histogram of a set of data.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram.html#numpy.histogram'
+tp454
+sS'var'
+p455
+(S''
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.var.html#numpy.var'
+tp456
+sS'copyto'
+p457
+(S'Copies values from one array to another, broadcasting as necessary.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.copyto.html#numpy.copyto'
+tp458
+sS'arctanh'
+p459
+(S'Inverse hyperbolic tangent elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arctanh.html#numpy.arctanh'
+tp460
+sS'linspace'
+p461
+(S'Return evenly spaced numbers over a specified interval.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html#numpy.linspace'
+tp462
+sS'rot90'
+p463
+(S'Rotate an array by 90 degrees in the counter-clockwise direction.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.rot90.html#numpy.rot90'
+tp464
+sS'apply_along_axis'
+p465
+(S'Apply a function to 1-D slices along the given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.apply_along_axis.html#numpy.apply_along_axis'
+tp466
+sS'copy'
+p467
+(S'Return an array copy of the given object.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.copy.html#numpy.copy'
+tp468
+sS'mirr'
+p469
+(S'Modified internal rate of return.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mirr.html#numpy.mirr'
+tp470
+sS'info'
+p471
+(S'Get help information for a function, class, or module.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.info.html#numpy.info'
+tp472
+sS'not_equal'
+p473
+(S'Return (x1 != x2) element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.not_equal.html#numpy.not_equal'
+tp474
+sS'fromfunction'
+p475
+(S'Construct an array by executing a function over each coordinate.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromfunction.html#numpy.fromfunction'
+tp476
+sS'greater_equal'
+p477
+(S'Return the truth value of (x1 >= x2) element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.greater_equal.html#numpy.greater_equal'
+tp478
+sS'argmin'
+p479
+(S'Return the indices of the minimum values along an axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.argmin.html#numpy.argmin'
+tp480
+sS'logical_or'
+p481
+(S'Compute the truth value of x1 OR x2 elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_or.html#numpy.logical_or'
+tp482
+sS'log10'
+p483
+(S'Return the base 10 logarithm of the input array, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.log10.html#numpy.log10'
+tp484
+sS'dstack'
+p485
+(S'Stack arrays in sequence depth wise (along third axis).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.dstack.html#numpy.dstack'
+tp486
+sS'true_divide'
+p487
+(S'Returns a true division of the inputs, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.true_divide.html#numpy.true_divide'
+tp488
+sS'maximum'
+p489
+(S'Element-wise maximum of array elements.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.maximum.html#numpy.maximum'
+tp490
+sS'typename'
+p491
+(S'Return a description for the given data type code.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.typename.html#numpy.typename'
+tp492
+sS'minimum'
+p493
+(S'Element-wise minimum of array elements.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.minimum.html#numpy.minimum'
+tp494
+sS'logspace'
+p495
+(S'Return numbers spaced evenly on a log scale.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logspace.html#numpy.logspace'
+tp496
+sS'fromstring'
+p497
+(S'A new 1-D array initialized from raw binary or text data in a string.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromstring.html#numpy.fromstring'
+tp498
+sS'polyder'
+p499
+(S'Return the derivative of the specified order of a polynomial.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polyder.html#numpy.polyder'
+tp500
+sS'isrealobj'
+p501
+(S'Return True if x is a not complex type or an array of complex numbers.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isrealobj.html#numpy.isrealobj'
+tp502
+sS'getbuffer'
+p503
+(S'Create a buffer object from the given object referencing a slice of\nlength size starting at offset.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.getbuffer.html#numpy.getbuffer'
+tp504
+sS'arccosh'
+p505
+(S'Inverse hyperbolic cosine, elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arccosh.html#numpy.arccosh'
+tp506
+sS'delete'
+p507
+(S'Return a new array with sub-arrays along an axis deleted.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.delete.html#numpy.delete'
+tp508
+sS'setxor1d'
+p509
+(S'Find the set exclusive-or of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.setxor1d.html#numpy.setxor1d'
+tp510
+sS'subtract'
+p511
+(S'Subtract arguments, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.subtract.html#numpy.subtract'
+tp512
+sS'clip'
+p513
+(S'Clip (limit) the values in an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.clip.html#numpy.clip'
+tp514
+sS'trapz'
+p515
+(S'Integrate along the given axis using the composite trapezoidal rule.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.trapz.html#numpy.trapz'
+tp516
+sS'__array_prepare__'
+p517
+(S'This method is called whenever the system internally allocates a\nnew array from '
+S'http://docs.scipy.org/doc/numpy/reference/arrays.classes.html#numpy.__array_prepare__'
+tp518
+sS'einsum'
+p519
+(S'Evaluates the Einstein summation convention on the operands.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.einsum.html#numpy.einsum'
+tp520
+sS'ediff1d'
+p521
+(S'The differences between consecutive elements of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ediff1d.html#numpy.ediff1d'
+tp522
+sS'seterr'
+p523
+(S'Set how floating-point errors are handled.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.seterr.html#numpy.seterr'
+tp524
+sS'seterrcall'
+p525
+(S'Set the floating-point error callback function or log object.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.seterrcall.html#numpy.seterrcall'
+tp526
+sS'zeros_like'
+p527
+(S'Return an array of zeros with the same shape and type as a given array.'
+p528
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros_like.html#numpy.zeros_like'
+p529
+tp530
+sS'frompyfunc'
+p531
+(S'Takes an arbitrary Python function and returns a Numpy ufunc.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.frompyfunc.html#numpy.frompyfunc'
+tp532
+sS'loadtxt'
+p533
+(S'Load data from a text file.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.loadtxt.html#numpy.loadtxt'
+tp534
+sS'triu_indices_from'
+p535
+(S'Return the indices for the upper-triangle of a (N, N) array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.triu_indices_from.html#numpy.triu_indices_from'
+tp536
+sS'trace'
+p537
+(S'Return the sum along diagonals of the array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.trace.html#numpy.trace'
+tp538
+sS'conj'
+p539
+(S'Return the complex conjugate, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.conj.html#numpy.conj'
+tp540
+sS'asmatrix'
+p541
+(S'Interpret the input as a matrix.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.asmatrix.html#numpy.asmatrix'
+tp542
+sS'any'
+p543
+(S'Test whether any array element along a given axis evaluates to True.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.any.html#numpy.any'
+tp544
+sS'absolute'
+p545
+(S'Calculate the absolute value element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.absolute.html#numpy.absolute'
+tp546
+sS'bitwise_xor'
+p547
+(S'Compute the bit-wise XOR of two arrays element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.bitwise_xor.html#numpy.bitwise_xor'
+tp548
+sS'expand_dims'
+p549
+(S'Expand the shape of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.expand_dims.html#numpy.expand_dims'
+tp550
+sS'__array_finalize__'
+p551
+(S'This method is called whenever the system internally allocates a\nnew array from '
+S'http://docs.scipy.org/doc/numpy/reference/arrays.classes.html#numpy.__array_finalize__'
+tp552
+sS'angle'
+p553
+(S'Return the angle of the complex argument.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.angle.html#numpy.angle'
+tp554
+sS'fabs'
+p555
+(S'Compute the absolute values elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fabs.html#numpy.fabs'
+tp556
+sS'floor'
+p557
+(S'Return the floor of the input, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.floor.html#numpy.floor'
+tp558
+sS'polyadd'
+p559
+(S'Find the sum of two polynomials.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polyadd.html#numpy.polyadd'
+tp560
+sS'array_repr'
+p561
+(S'Return the string representation of an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.array_repr.html#numpy.array_repr'
+tp562
+sS'unwrap'
+p563
+(S'Unwrap by changing deltas between values to 2*pi complement.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.unwrap.html#numpy.unwrap'
+tp564
+sS'apply_over_axes'
+p565
+(S'Apply a function repeatedly over multiple axes.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.apply_over_axes.html#numpy.apply_over_axes'
+tp566
+sS'cross'
+p567
+(S'Return the cross product of two (arrays of) vectors.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.cross.html#numpy.cross'
+tp568
+sS'sqrt'
+p569
+(S'Return the positive square-root of an array, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sqrt.html#numpy.sqrt'
+tp570
+sS'arctan'
+p571
+(S'Trigonometric inverse tangent, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.arctan.html#numpy.arctan'
+tp572
+sS'bmat'
+p573
+(S'Build a matrix object from a string, nested sequence, or array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.bmat.html#numpy.bmat'
+tp574
+sS'unravel_index'
+p575
+(S'Converts a flat index or array of flat indices into a tuple\nof coordinate arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.unravel_index.html#numpy.unravel_index'
+tp576
+sS'tanh'
+p577
+(S'Compute hyperbolic tangent element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tanh.html#numpy.tanh'
+tp578
+sS'pad'
+p579
+(S'Pads an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.pad.html#numpy.pad'
+tp580
+sS'split'
+p581
+(S'Split an array into multiple sub-arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.split.html#numpy.split'
+tp582
+sS'rollaxis'
+p583
+(S'Roll the specified axis backwards, until it lies in a given position.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.rollaxis.html#numpy.rollaxis'
+tp584
+sS'tile'
+p585
+(S'Construct an array by repeating A the number of times given by reps.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tile.html#numpy.tile'
+tp586
+sS'array_str'
+p587
+(S'Return a string representation of the data in an array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.array_str.html#numpy.array_str'
+tp588
+sS'asfortranarray'
+p589
+(S'Return an array laid out in Fortran order in memory.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.asfortranarray.html#numpy.asfortranarray'
+tp590
+sS'roll'
+p591
+(S'Roll array elements along a given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.roll.html#numpy.roll'
+tp592
+sS'triu_indices'
+p593
+(S'Return the indices for the upper-triangle of an (n, n) array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.triu_indices.html#numpy.triu_indices'
+tp594
+sS'binary_repr'
+p595
+(S'Return the binary representation of the input number as a string.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.binary_repr.html#numpy.binary_repr'
+tp596
+sS'real_if_close'
+p597
+(S'If complex input returns a real array if complex parts are close to zero.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.real_if_close.html#numpy.real_if_close'
+tp598
+sS'reciprocal'
+p599
+(S'Return the reciprocal of the argument, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.reciprocal.html#numpy.reciprocal'
+tp600
+sS's_'
+p601
+(S'A nicer way to build up index tuples for arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.s_.html#numpy.s_'
+tp602
+sS'hamming'
+p603
+(S'Return the Hamming window.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.hamming.html#numpy.hamming'
+tp604
+sS'fv'
+p605
+(S'Compute the future value.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.fv.html#numpy.fv'
+tp606
+sS'flipud'
+p607
+(S'Flip array in the up/down direction.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.flipud.html#numpy.flipud'
+tp608
+sS'i0'
+p609
+(S'Modified Bessel function of the first kind, order 0.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.i0.html#numpy.i0'
+tp610
+sS'compress'
+p611
+(S'Return selected slices of an array along given axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.compress.html#numpy.compress'
+tp612
+sS'require'
+p613
+(S'Return an ndarray of the provided type that satisfies requirements.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.require.html#numpy.require'
+tp614
+sS'ravel_multi_index'
+p615
+(S'Converts a tuple of index arrays into an array of flat\nindices, applying boundary modes to the multi-index.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ravel_multi_index.html#numpy.ravel_multi_index'
+tp616
+sS'histogramdd'
+p617
+(S'Compute the multidimensional histogram of some data.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.histogramdd.html#numpy.histogramdd'
+tp618
+sS'tril_indices'
+p619
+(S'Return the indices for the lower-triangle of an (n, n) array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.tril_indices.html#numpy.tril_indices'
+tp620
+sS'asanyarray'
+p621
+(S'Convert the input to an ndarray, but pass ndarray subclasses through.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.asanyarray.html#numpy.asanyarray'
+tp622
+sS'isinf'
+p623
+(S'Test element-wise for positive or negative infinity.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.isinf.html#numpy.isinf'
+tp624
+sS'bartlett'
+p625
+(S'Return the Bartlett window.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.bartlett.html#numpy.bartlett'
+tp626
+sS'polydiv'
+p627
+(S'Returns the quotient and remainder of polynomial division.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.polydiv.html#numpy.polydiv'
+tp628
+sS'mask_indices'
+p629
+(S'Return the indices to access (n, n) arrays, given a masking function.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.mask_indices.html#numpy.mask_indices'
+tp630
+sS'histogram2d'
+p631
+(S'Compute the bi-dimensional histogram of two data samples.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.histogram2d.html#numpy.histogram2d'
+tp632
+sS'amax'
+p633
+(S'Return the maximum of an array or maximum along an axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.amax.html#numpy.amax'
+tp634
+sS'identity'
+p635
+(S'Return the identity array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.identity.html#numpy.identity'
+tp636
+sS'flatnonzero'
+p637
+(S'Return indices that are non-zero in the flattened version of a.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.flatnonzero.html#numpy.flatnonzero'
+tp638
+sS'sinh'
+p639
+(S'Hyperbolic sine, element-wise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.sinh.html#numpy.sinh'
+tp640
+sS'amin'
+p641
+(S'Return the minimum of an array or minimum along an axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.amin.html#numpy.amin'
+tp642
+sS'logical_not'
+p643
+(S'Compute the truth value of NOT x elementwise.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.logical_not.html#numpy.logical_not'
+tp644
+sS'correlate'
+p645
+(S'Cross-correlation of two 1-dimensional sequences.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.correlate.html#numpy.correlate'
+tp646
+sS'pv'
+p647
+(S'Compute the present value.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.pv.html#numpy.pv'
+tp648
+sS'dot'
+p649
+(S'Dot product of two arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html#numpy.dot'
+tp650
+sS'average'
+p651
+(S'Compute the weighted average along the specified axis.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.average.html#numpy.average'
+tp652
+sS'rad2deg'
+p653
+(S'Convert angles from radians to degrees.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.rad2deg.html#numpy.rad2deg'
+tp654
+sS'left_shift'
+p655
+(S'Shift the bits of an integer to the left.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.left_shift.html#numpy.left_shift'
+tp656
+sS'hsplit'
+p657
+(S'Split an array into multiple sub-arrays horizontally (column-wise).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.hsplit.html#numpy.hsplit'
+tp658
+sS'searchsorted'
+p659
+(S'Find indices where elements should be inserted to maintain order.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.searchsorted.html#numpy.searchsorted'
+tp660
+sS'gradient'
+p661
+(S'Return the gradient of an N-dimensional array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.gradient.html#numpy.gradient'
+tp662
+sS'base_repr'
+p663
+(S'Return a string representation of a number in the given base system.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.base_repr.html#numpy.base_repr'
+tp664
+sS'argwhere'
+p665
+(S'Find the indices of array elements that are non-zero, grouped by element.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.argwhere.html#numpy.argwhere'
+tp666
+sS'exp'
+p667
+(S'Calculate the exponential of all elements in the input array.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.exp.html#numpy.exp'
+tp668
+sS'reshape'
+p669
+(S'Gives a new shape to an array without changing its data.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html#numpy.reshape'
+tp670
+sS'set_string_function'
+p671
+(S'Set a Python function to be used when pretty printing arrays.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.set_string_function.html#numpy.set_string_function'
+tp672
+sS'issubdtype'
+p673
+(S'Returns True if first argument is a typecode lower/equal in type hierarchy.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.issubdtype.html#numpy.issubdtype'
+tp674
+sS'result_type'
+p675
+(S'Returns the type that results from applying the NumPy\ntype promotion rules to the arguments.'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.result_type.html#numpy.result_type'
+tp676
+sS'ascontiguousarray'
+p677
+(S'Return a contiguous array in memory (C order).'
+S'http://docs.scipy.org/doc/numpy/reference/generated/numpy.ascontiguousarray.html#numpy.ascontiguousarray'
+tp678
+s.
