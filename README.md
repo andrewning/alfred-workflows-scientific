@@ -13,7 +13,7 @@ NumPy Search
 ------------
 
 
-![](np.tiff)
+![](screenshots/np.tiff)
 
 **np "method name"**
 
@@ -27,7 +27,7 @@ The workflow contains a cached version of the relevant information from the NumP
 BibTeX Grab
 -----------
 
-![](bib.tiff)
+![](screenshots/bib.tiff)
 
 **bib "citation info"**
 
@@ -38,7 +38,7 @@ Uses a metadata search api (beta) provided by [CrossRef](http://search.labs.cros
 AIAA Search
 -----------
 
-![](aiaa.tiff)
+![](screenshots/aiaa.tiff)
 
 **aiaa "citation info"**
 
