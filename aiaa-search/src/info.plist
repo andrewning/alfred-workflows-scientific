@@ -29,19 +29,19 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>34549876-1547-4570-A2D4-643D08E9B512</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Get PDF</string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>6098ADD3-BDB8-4144-B964-FAC5432CD0F8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EDF3A5C8-0463-4C53-BEE6-F69047839157</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Get PDF</string>
 			</dict>
 		</array>
 	</dict>
@@ -55,48 +55,6 @@
 	<string>AIAA Search</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>http://arc.aiaa.org/doi/pdf/{query}</string>
-				<key>utf8</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>34549876-1547-4570-A2D4-643D08E9B512</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>62</integer>
-				<key>keyword</key>
-				<string>aiaa</string>
-				<key>runningsubtext</key>
-				<string>searching for matching articles ...</string>
-				<key>script</key>
-				<string>python search.py "{query}"</string>
-				<key>subtext</key>
-				<string>search Aerospace Research Central</string>
-				<key>title</key>
-				<string>Find AIAA Articles</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -128,6 +86,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>keyword</key>
+				<string>aiaa</string>
+				<key>runningsubtext</key>
+				<string>searching for matching articles ...</string>
+				<key>script</key>
+				<string>python search.py "{query}"</string>
+				<key>subtext</key>
+				<string>search Aerospace Research Central</string>
+				<key>title</key>
+				<string>Find AIAA Articles</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -148,35 +133,50 @@
 			<key>uid</key>
 			<string>CD1AD6E2-2446-4E43-A195-A34A6124DF55</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>python openurl.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EDF3A5C8-0463-4C53-BEE6-F69047839157</string>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>34549876-1547-4570-A2D4-643D08E9B512</key>
+		<key>3E068380-BD07-474B-B23A-CC15FC54D5DC</key>
 		<dict>
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
-		<key>3E068380-BD07-474B-B23A-CC15FC54D5DC</key>
-		<dict>
-			<key>ypos</key>
-			<real>180</real>
-		</dict>
 		<key>6098ADD3-BDB8-4144-B964-FAC5432CD0F8</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>100</real>
 		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>100</real>
 		</dict>
 		<key>CD1AD6E2-2446-4E43-A195-A34A6124DF55</key>
 		<dict>
 			<key>ypos</key>
-			<real>300</real>
+			<real>170</real>
+		</dict>
+		<key>EDF3A5C8-0463-4C53-BEE6-F69047839157</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
