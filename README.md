@@ -50,7 +50,7 @@ Similar to BibTeX Grab, but specifically designed for searching for papers publi
 
 **aiaa "citation info" [cmd]**
 
-If you hold down [cmd] when actioning an article, the PDF will be downloaded directly from AIAA (an AIAA subscription is required).
+If you hold down [cmd] when actioning an article, the PDF will be downloaded directly from AIAA (an AIAA subscription is required only for the PDF download functionality).
 
 #### [[Download AIAA Search](https://github.com/andrewning/alfred-workflows-scientific/raw/master/aiaa-search/AIAA%20Search.alfredworkflow)]
 
