@@ -35,6 +35,10 @@ BibTeX Grab
 
 Uses a metadata search api (beta) provided by [CrossRef](http://search.labs.crossref.org).  You can search using any part of a citation (e.g., author names, article title, digital object identifier (DOI), etc.), or even a full citation.  It then grabs the BibTeX from the [International DOI Foundation](http://dx.doi.org) (IDF).  If a [BibDesk](http://bibdesk.sourceforge.net) document is open (or if you've set the preference in BibDesk to open a file at application launch), the BibTex entry will be directly imported.  For those that don't use BibDesk, the BibTeX reference is also copied to the clipboard.  Obviously the article you're interested in needs to have a registered DOI with IDF (generally only journal articles).  Occasionaly some articles don't have associated BibTeX data stored with them, and a "Not Available" notification will be posted.
 
+**bib doi:"doi"**
+
+I've noticed that for some very recent papers the DOI information will be registered with doi.org, but is not yet indexed by CrossRef.  If you do have the DOI, there is no need for going through CrossRef anyway and you can just grab the relevant citation data directly.  Just lead your argument with "doi:" (not case-sensitive) followed by the actual DOI number.
+
 #### [[Download BibTeX Grab](https://github.com/andrewning/alfred-workflows-scientific/raw/master/bibtex-grab/BibTeX%20Grab.alfredworkflow)]
 
 

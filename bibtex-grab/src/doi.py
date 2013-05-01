@@ -14,17 +14,27 @@ import sys
 # get query from user
 query = sys.argv[1]
 
-# Use crossref metadata search (beta) to get the DOI
-params = {'q': query, 'rows': '10'}
-r = requests.get('http://search.labs.crossref.org/dois', params=params)
+if query.lower().startswith('doi:'):
 
-# write results in XML format for Alfred
-results = []
-for j in r.json():
-    results.append(alfred.Item(title=j['fullCitation'],
-                               subtitle='doi: ' + j['doi'],
-                               attributes={'uid': j['doi'], 'arg': j['doi']},
-                               icon='doc.png'))
+    doi = query.lower().split('doi:')[1].lstrip().rstrip()
+    results = [alfred.Item(title='DOI',
+                           subtitle=doi,
+                           attributes={'uid': doi, 'arg': doi},
+                           icon='icon.png')]
+
+else:
+
+    # Use crossref metadata search (beta) to get the DOI
+    params = {'q': query, 'rows': '10'}
+    r = requests.get('http://search.labs.crossref.org/dois', params=params)
+
+    # write results in XML format for Alfred
+    results = []
+    for j in r.json():
+        results.append(alfred.Item(title=j['fullCitation'],
+                                   subtitle='doi: ' + j['doi'],
+                                   attributes={'uid': j['doi'], 'arg': j['doi']},
+                                   icon='icon.png'))
 
 sys.stdout.write(alfred.xml(results))
 
