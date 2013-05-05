@@ -14,11 +14,10 @@ import sys
 # get query from user
 query = sys.argv[1]
 
-if query.lower().startswith('doi:'):
-
-    doi = query.lower().split('doi:')[1].lstrip().rstrip()
-    results = [alfred.Item(title='DOI',
-                           subtitle=doi,
+if query.endswith('!!'):
+    doi = query.split('!!')[0].rstrip().lstrip()
+    results = [alfred.Item(title='Lookup by DOI: ' + doi,
+                           subtitle='Import BibTeX',
                            attributes={'uid': doi, 'arg': doi},
                            icon='icon.png')]
 
@@ -32,7 +31,7 @@ else:
     results = []
     for j in r.json():
         results.append(alfred.Item(title=j['fullCitation'],
-                                   subtitle='doi: ' + j['doi'],
+                                   subtitle='Import BibTeX',
                                    attributes={'uid': j['doi'], 'arg': j['doi']},
                                    icon='icon.png'))
 

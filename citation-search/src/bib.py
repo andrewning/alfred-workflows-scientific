@@ -18,12 +18,12 @@ doi = sys.argv[1]
 headers = {'Accept': 'application/x-bibtex'}
 r = requests.post('http://dx.doi.org/' + doi, headers=headers)
 
-# convert unicode
+# encode
 bibtex = unicode(r.text).encode('utf-8')
 
 # occasionally the record doesn't exist
 if bibtex[0] != '@':
-    sys.stdout.write('Not Available')
+    sys.stdout.write('BibTeX Not Available')
     exit()
 
 # open BibDesk (opens a document if you have this set in BibTeX preferences)

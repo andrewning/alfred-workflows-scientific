@@ -1,10 +1,10 @@
 alfred-workflows-scientific
 ===========================
 
-A collection of [Alfred v2](http://www.alfredapp.com) workflows (mostly) targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
+A collection of [Alfred v2](http://www.alfredapp.com) workflows targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
 
 - [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
-- [BibTeX Grab](#bibtex-grab): lookup articles using any metadata and download the associated BibTeX entry (article's DOI must registered with IDF).
+- [Citation Search](#citation-search): lookup articles using any citation metadata and either download the associated BibTeX entry, go to the landing page for the article, or copy a formatted reference.
 - [AIAA Search](#aiaa-search): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
 
 
@@ -26,20 +26,31 @@ The workflow contains a cached version of the relevant information from the NumP
 
 
 
-BibTeX Grab
------------
+Citation Search
+---------------
 
-![](screenshots/bib.tiff)
+![](screenshots/cite.tiff)
 
-**bib "citation info"**
+**cite "citation metadata"**
 
-Uses a metadata search api (beta) provided by [CrossRef](http://search.labs.crossref.org).  You can search using any part of a citation (e.g., author names, article title, digital object identifier (DOI), etc.), or even a full citation.  It then grabs the BibTeX from the [International DOI Foundation](http://dx.doi.org) (IDF).  If a [BibDesk](http://bibdesk.sourceforge.net) document is open (or if you've set the preference in BibDesk to open a file at application launch), the BibTex entry will be directly imported.  For those that don't use BibDesk, the BibTeX reference is also copied to the clipboard.  Obviously the article you're interested in needs to have a registered DOI with IDF (generally only journal articles).  Occasionaly some articles don't have associated BibTeX data stored with them, and a "Not Available" notification will be posted.
+A search api (beta) provided by [CrossRef](http://search.labs.crossref.org) attempts to match your provided citation metadata.  You can search using any part of a citation (e.g., author names, article title, digital object identifier (DOI), etc.), or even a full citation.  It then grabs the associated BibTeX reference from the [International DOI Foundation](http://dx.doi.org) (IDF).  If you have the application [BibDesk](http://bibdesk.sourceforge.net) and one of its documents is open (or if you've set the preference in BibDesk to open a file at application launch), the BibTex entry will be directly imported.  For those that don't use BibDesk, the BibTeX reference is also copied to the clipboard.  Obviously the article you're interested in needs to have a registered DOI with IDF (generally only journal articles).  Occasionaly some articles don't have associated BibTeX data stored with them, and a "Not Available" notification will be posted.
 
-**bib doi:"doi"**
+**cite "citation metadata" [cmd]**
 
-I've noticed that for some very recent papers the DOI information will be registered with doi.org, but is not yet indexed by CrossRef.  If you do have the DOI, there is no need for going through CrossRef anyway and you can just grab the relevant citation data directly.  Just lead your argument with "doi:" (not case-sensitive) followed by the actual DOI number.
+Hold down [cmd] when actioning an article to go to the landing page associated with the article.  If you have a subscription to the associated journal you can then access the PDF.
 
-#### [[Download BibTeX Grab](https://github.com/andrewning/alfred-workflows-scientific/raw/master/bibtex-grab/BibTeX%20Grab.alfredworkflow)]
+**cite "citation metadata" [alt]**
+
+Hold down [alt] \(option) when actioning an article to copy a formatted reference to the clipboard.  Theoretically the API used by doi.org should allow you to format the reference using any style in the [Citation Style Language](https://github.com/citation-style-language/styles) database.  However, in practice I've found that the vast majority are not working.  For now, until a better solution can be found, the formatted reference is in APA format.
+
+**cite "doi"!!**
+
+I've noticed that for some recently added papers the DOI information will be registered with doi.org, but the data is not yet indexed by the CrossRef search engine.  If you do have the DOI, there is no need for going through CrossRef anyway and you can just grab the relevant citation data directly.  Just add a double bang (two exclamation marks) after the DOI to bypass the metadata search.  (This option also works will the [cmd] and [alt] modifiers).
+
+
+
+
+#### [[Download Citation Search](https://github.com/andrewning/alfred-workflows-scientific/raw/master/citation-search/Citation%20Search.alfredworkflow)]
 
 
 
