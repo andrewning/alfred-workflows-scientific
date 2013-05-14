@@ -6,6 +6,7 @@ A collection of [Alfred v2](http://www.alfredapp.com) workflows targeting scient
 - [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
 - [Citation Search](#citation-search): lookup articles using any citation metadata and either download the associated BibTeX entry, go to the landing page for the article, or copy a formatted reference.
 - [AIAA Search](#aiaa-search): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
+- [LaTeX Tools](#latex-tools): tools for working with LaTeX files.  Currently a word/figure/equation count, and a diff workflow for comparing two LaTeX files in a compiled PDF.
 
 
 
@@ -22,7 +23,7 @@ Search the methods in the NumPy module, and see a short description from the doc
 
 The workflow contains a cached version of the relevant information from the NumPy docs.  If NumPy is updated and the local cache is out of date, you can run "scrapenp" to redownload the relevant data.  Be patient though, as it will take a few minutes.  A notification will pop-up when its complete.
 
-#### [[Download NumPy Search](https://github.com/andrewning/alfred-workflows-scientific/raw/master/numpy-search/NumPy%20Search.alfredworkflow)]
+#### [[Download NumPy Search Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/numpy-search/NumPy%20Search.alfredworkflow)]
 
 
 
@@ -50,7 +51,7 @@ I've noticed that for some recently added papers the DOI information will be reg
 
 
 
-#### [[Download Citation Search](https://github.com/andrewning/alfred-workflows-scientific/raw/master/citation-search/Citation%20Search.alfredworkflow)]
+#### [[Download Citation Search Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/citation-search/Citation%20Search.alfredworkflow)]
 
 
 
@@ -67,7 +68,26 @@ Similar to BibTeX Grab, but specifically designed for searching for papers publi
 
 If you hold down [cmd] when actioning an article, the PDF will be downloaded directly from AIAA (an AIAA subscription is required only for the PDF download functionality).
 
-#### [[Download AIAA Search](https://github.com/andrewning/alfred-workflows-scientific/raw/master/aiaa-search/AIAA%20Search.alfredworkflow)]
+#### [[Download AIAA Search Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/aiaa-search/AIAA%20Search.alfredworkflow)]
+
+
+LaTeX Tools
+-----------
+
+![](screenshots/texcount.tiff)
+
+**texcount "tex file"**
+
+Parses LaTeX file to do a word count using the Perl script [texcount.pl](http://app.uio.no/ifi/texcount/).  Reports back a concise summary on the number of words (text, headers, and captions), number of floats, and number of displayed equations (not counting inline equations).  Depending on the journal of interest you can then convert the floats/equations to equivalent word counts.
+
+![](screenshots/texdiff.tiff)
+
+**TeXDiff [file action]**  *(alpha)*
+
+TexDiff is a file action to compare two LaTeX files using the Perl script [latexdiff.pl](http://www.ctan.org/pkg/latexdiff).  Add the files to Alfred's Temporary File Buffer (⌥↑ by default) then action the items in the buffer (⌥→ by default).  The shell script will then recursively copy both directories in which the files are contained (in order to get associated images, BibTeX files, etc.), run latexdiff.pl, run latexmk to build a pdf, and then open the pdf showing the difference between the files.  This workflow requires that you have MacTeX installed (more specifically you need latexmk and pdflatex in /usr/texbin).  This workflow should be considered in alpha status.  If you don't see a PDF open up within a minute, then there was likely an error with the pdf building process.  Open the workflow folder and check output.log.  If reliability becomes a common problem, the workflow may be reduced to stop at building the diff.tex file and leave the final compilation to pdf to the user.
+
+#### [[Download LaTeX Tools Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/latex-tools/LaTeX%20Tools.alfredworkflow)]
+
 
 
 Acknowledgments
