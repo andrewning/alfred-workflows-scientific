@@ -9,6 +9,8 @@ Created by Andrew Ning on April 4, 2013
 import requests
 import sys
 from subprocess import Popen, PIPE
+from unicode_to_latex import unicode_to_latex
+import re
 
 
 # get the DOI
@@ -18,8 +20,14 @@ doi = sys.argv[1]
 headers = {'Accept': 'application/x-bibtex'}
 r = requests.post('http://dx.doi.org/' + doi, headers=headers)
 
-# encode
-bibtex = unicode(r.text).encode('utf-8')
+# convert to latex format
+bibtex = r.text
+for key in unicode_to_latex.keys():
+    bibtex = bibtex.replace(key, unicode_to_latex[key])
+
+# replace cite-key to allow bibtex to generate own
+bibtex = re.sub('{.*?,', '{cite-key,', bibtex, count=1)
+
 
 # occasionally the record doesn't exist
 if bibtex[0] != '@':
@@ -43,10 +51,10 @@ if exists application "BibDesk" then
         end if
     end tell
 end if
-'''.format(bibtex.replace('"', '\\"'))  # escape quotes
+'''.format(bibtex.replace('\\', '\\\\').replace('"', '\\"'))
 
 # run applescript
-p = Popen(['osascript', '-'], stdin=PIPE, stdout=PIPE)
+p = Popen(['osascript', '-'], stdin=PIPE, stdout=PIPE)  # , stderr=PIPE)
 p.communicate(script)
 
 # pass bibtex
