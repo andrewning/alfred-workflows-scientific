@@ -62,7 +62,8 @@ for line in r.text.split('\n'):
 
 firstAuthor = authors.split(' and')[0]
 lastName = firstAuthor.split(' ')[-1]
-cite_key = lastName + year
+# cite_key = lastName + year
+cite_key = 'cite-key'
 
 
 # if ',' in firstAuthor:
