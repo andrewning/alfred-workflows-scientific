@@ -30,9 +30,10 @@ else:
     # write results in XML format for Alfred
     results = []
     for j in r.json():
+        doi = j['doi'].split('dx.doi.org/')[1]
         results.append(alfred.Item(title=j['fullCitation'],
                                    subtitle='Import BibTeX',
-                                   attributes={'uid': j['doi'], 'arg': j['doi']},
+                                   attributes={'uid': doi, 'arg': doi},
                                    icon='icon.png'))
 
 sys.stdout.write(alfred.xml(results))
