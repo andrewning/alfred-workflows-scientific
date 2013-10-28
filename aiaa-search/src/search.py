@@ -7,7 +7,7 @@ Created by Andrew Ning on April 15, 2013
 """
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
 import alfred
 import sys
 
@@ -18,6 +18,10 @@ query = sys.argv[1]
 # grab search data
 params = {'searchText': query}
 r = requests.get('http://arc.aiaa.org/action/doSearch', params=params)
+
+# only_table = SoupStrainer('table', 'articleEntry')
+# articles = BeautifulSoup(r.text, parse_only=only_table)
+
 soup = BeautifulSoup(r.text)
 articles = soup.find_all('table', {'class': 'articleEntry'})
 
@@ -32,7 +36,10 @@ for art in articles:
     authorblock = art.find_all('a', {'class': 'entryAuthor'})
     authorString = ''
     for auth in authorblock:
-        authorString += auth.span.string + ', '
+        if auth.span is not None:
+            authorString += auth.span.string + ', '
+        else:
+            authorString += auth.string + ', '
 
     # get metadata
     meta = art.find('div', {'class': 'art_meta'})
