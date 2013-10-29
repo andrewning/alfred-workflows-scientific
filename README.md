@@ -95,7 +95,11 @@ Go To Current File
 
 Allows you to assign a keyboard shortcut to quickly go to the current file in Finder or Terminal.  For example, you are working on a presentation in Keynote and want to go to the corresponding directory.  You could right click on the title of the file in the menu bar and then click in the folder (plus an additional step if you want to get to the terminal), or just hit a keyboard shortcut and go right there.
 
-This may not necessarily work for all applications---some are not file-based so it wouldn't make sense, and some use non-standard properties.  It should definitely work for apps that follow standard AppleScript conventions: iWork (Keynote, Pages, Numbers), Preview, Skim, BibDesk, Byword, MS Office (PowerPoint, Word, Excel)[^ms], Marked, etc..  It has a fall-back method for those apps that don't provide an AppleScript Dictionary or are non-standard (Sublime Text).  If you come across an app this doesn't work for, let me know and I'll see if it's possible to add.
+This may not necessarily work for all applications---some are not file-based so it wouldn't make sense, and some use non-standard properties.  It should definitely work for apps that follow standard AppleScript conventions: iWork (Keynote, Pages, Numbers), Preview, Skim, BibDesk, Byword, MS Office (PowerPoint, Word, Excel)*, Marked, etc..  It has a fall-back method for those apps that don't provide an AppleScript Dictionary or are non-standard (Sublime Text).  If you come across an app this doesn't work for, let me know and I'll see if it's possible to add.
+
+**Note for Mavericks users**: If it does not work for certain applications, make sure you have given Alfred permission to control the computer through the Accessibility pane in the Security & Privacy settings of OS X preferences.
+
+\* Actually Microsoft Office does not follow convention, but I figured it was popular enough that I'd add special checks for it.
 
 #### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
 
@@ -116,5 +120,3 @@ Copyright (c) 2013, S. Andrew Ning.  All rights reserved.
 
 All code is licensed under [The MIT License](http://opensource.org/licenses/mit-license.php).
 
-
-[^ms]: Actually Microsoft Office does not follow convention, but I figured it was popular enough that I'd add special checks for it.
