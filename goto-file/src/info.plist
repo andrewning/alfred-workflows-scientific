@@ -17,6 +17,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>571D7149-BE62-4971-AE34-51BBA3843D3A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9D545365-4860-4D5F-A57B-20899C2402ED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>A959BD07-F77C-4F02-A727-B86A71A3C14F</key>
 		<array>
 			<dict>
@@ -42,42 +53,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>393216</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A959BD07-F77C-4F02-A727-B86A71A3C14F</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>script</key>
-				<string>osascript terminalfront.scpt terminal</string>
+				<string>osascript finder.scpt</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+			<string>F37FD065-0098-4FFC-A884-F0656104C3DA</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -109,17 +95,84 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A959BD07-F77C-4F02-A727-B86A71A3C14F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>script</key>
-				<string>osascript terminalfront.scpt finder</string>
+				<string>osascript terminal.scpt</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F37FD065-0098-4FFC-A884-F0656104C3DA</string>
+			<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>script</key>
+				<string>osascript iterm.scpt</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9D545365-4860-4D5F-A57B-20899C2402ED</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>34</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>I</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>571D7149-BE62-4971-AE34-51BBA3843D3A</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -131,22 +184,32 @@
 		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
 		<dict>
 			<key>ypos</key>
-			<real>60</real>
+			<real>180</real>
 		</dict>
 		<key>55CAD864-2540-4535-8AC9-1A807CB000F8</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>50</real>
+		</dict>
+		<key>571D7149-BE62-4971-AE34-51BBA3843D3A</key>
+		<dict>
+			<key>ypos</key>
+			<real>310</real>
+		</dict>
+		<key>9D545365-4860-4D5F-A57B-20899C2402ED</key>
+		<dict>
+			<key>ypos</key>
+			<real>310</real>
 		</dict>
 		<key>A959BD07-F77C-4F02-A727-B86A71A3C14F</key>
 		<dict>
 			<key>ypos</key>
-			<real>60</real>
+			<real>180</real>
 		</dict>
 		<key>F37FD065-0098-4FFC-A884-F0656104C3DA</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>50</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

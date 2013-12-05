@@ -90,6 +90,31 @@ The following packages/codes are used within this workflows:
 
 
 
+Go To Current File
+------------------
+
+#### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
+
+Allows you to assign a keyboard shortcut to quickly go to the current file in Finder or Terminal (or iTerm2).  For example, you are working on a presentation in Keynote and want to go to the corresponding directory.  You could right click on the title of the file in the menu bar and then click in the folder (plus an additional step if you want to get to the terminal), or just hit a keyboard shortcut and go right there.
+
+This may not necessarily work for all applications---some are not file-based so it wouldn't make sense, and some use non-standard properties.  It should definitely work for apps that follow standard AppleScript conventions: iWork (Keynote, Pages, Numbers), Preview, Skim, BibDesk, Byword, MS Office (PowerPoint, Word, Excel), Marked, etc..  It has a fall-back method for those apps that don't provide an AppleScript Dictionary or are non-standard (Sublime Text).  If you come across an app this doesn't work for, let me know and I'll see if it's possible to add.
+
+**Note for Microsoft Office users**: 
+
+Microsoft Office doesn't follow standard AppleScript.  To prevent the script from throwing errors from those who did not use MS Office, I left this functionality out by default.  You should download [this version](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File%20MS.alfredworkflow) instead.  The only difference is each "Run Script" adds the key phrase MS at the end, which triggers a slightly different workflow.
+
+**Note on Terminal/iTerm2**: 
+
+If you don't use iTerm2, don't set the third keyboard shortcut.  That one is only for iTerm.
+
+**Note for Mavericks users**: 
+
+If it does not work for certain applications, make sure you have given Alfred permission to control the computer through the Accessibility pane in the Security & Privacy settings of OS X preferences.
+
+
+#### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
+
+
 NumPy Search
 ------------
 
@@ -136,36 +161,7 @@ TexDiff is a file action to compare two LaTeX files using the Perl script [latex
 #### [[Download LaTeX Tools Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/latex-tools/LaTeX%20Tools.alfredworkflow)]
 
 
-Go To Current File
-------------------
 
-#### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
-
-Allows you to assign a keyboard shortcut to quickly go to the current file in Finder or Terminal (or iTerm2).  For example, you are working on a presentation in Keynote and want to go to the corresponding directory.  You could right click on the title of the file in the menu bar and then click in the folder (plus an additional step if you want to get to the terminal), or just hit a keyboard shortcut and go right there.
-
-This may not necessarily work for all applications---some are not file-based so it wouldn't make sense, and some use non-standard properties.  It should definitely work for apps that follow standard AppleScript conventions: iWork (Keynote, Pages, Numbers), Preview, Skim, BibDesk, Byword, MS Office (PowerPoint, Word, Excel), Marked, etc..  It has a fall-back method for those apps that don't provide an AppleScript Dictionary or are non-standard (Sublime Text).  If you come across an app this doesn't work for, let me know and I'll see if it's possible to add.
-
-**Note for iTerm2 users**: 
-
-On the Alfred workflow page, double click the top right "Run Script" box and in the "Script" field 
-
-replace:
-
-``osascript terminalfront.scpt Terminal``
-
-with:
-
-``osascript terminalfront.scpt iTerm``
-
-(not case sensitive).
-
-
-**Note for Mavericks users**: 
-
-If it does not work for certain applications, make sure you have given Alfred permission to control the computer through the Accessibility pane in the Security & Privacy settings of OS X preferences.
-
-
-#### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
 
 
 License
