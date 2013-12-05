@@ -3,15 +3,15 @@ alfred-workflows-scientific
 
 A collection of [Alfred v2](http://www.alfredapp.com) workflows targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
 
-- [Reference Import](#reference-import): search for an article/book from a variety of sources and import the corresponding reference data (BibTex, PDF) into BibDesk, copy BibTeX to clipboard, go to the landing page for the article, or copy a formatted reference.  Also supports reference lookup from a PDF file. (This workflow was formerly known as "Citation Search" and "AIAA Search")
+- [Reference Importer](#reference-importer): search for an article/book from a variety of sources and import the corresponding reference data (BibTex, PDF) into BibDesk, copy BibTeX to clipboard, go to the landing page for the article, or copy a formatted reference.  Also supports reference lookup from a PDF file. (This workflow was formerly known as "Citation Search" and "AIAA Search")
 - [Go To Current File](#go-to-current-file): Keyboard shortcut to quickly go to the file in the frontmost app (either in Finder, Terminal, or iTerm2).
 - [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
 - [LaTeX Tools](#latex-tools): tools for working with LaTeX files.  Currently a word/figure/equation count, and a diff workflow for comparing two LaTeX files in a compiled PDF.
 
 
-## Reference Import 
+## Reference Importer
 
-#### [[Download Reference Import Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-import/Reference%20Import.alfredworkflow)]
+#### [[Download Reference Importer Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-importer/Reference%20Importer.alfredworkflow)]
 
 
 This workflow is a combination of two of my former workflows (Citation Search and AIAA Search) with many improvements and new features.  It allows you to import BibTeX, and in some cases a linked PDF, for:
@@ -74,7 +74,7 @@ A custom search for papers published with [The American Institute of Aeronautics
 If you hold down [cmd] when actioning an article, just the PDF will be downloaded, but not the BibTeX entry (an AIAA subscription is required only for the PDF download functionality).
 
 
-#### [[Download Reference Import Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-import/Reference%20Import.alfredworkflow)]
+#### [[Download Reference Importer Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-importer/Reference%20Importer.alfredworkflow)]
 
 
 [1]: http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1824
