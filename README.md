@@ -11,6 +11,9 @@ A collection of [Alfred v2](http://www.alfredapp.com) workflows targeting scient
 
 ## Reference Import 
 
+#### [[Download Reference Import Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-import/Reference%20Import.alfredworkflow)]
+
+
 This workflow is a combination of two of my former workflows (Citation Search and AIAA Search) with many improvements and new features.  It allows you to import BibTeX, and in some cases a linked PDF, for:
 
 - journal articles through a CrossRef DOI lookup
@@ -28,7 +31,7 @@ This workflow is primarily intended to work with [BibDesk](http://bibdesk.source
 
 A search api (beta) provided by [CrossRef](http://search.labs.crossref.org) attempts to match your provided citation metadata.  You can search using any part of a citation (e.g., author names, article title, digital object identifier (DOI), etc.), or even a full citation.  The workflow then grabs the associated BibTeX reference from CrossRef.  Obviously the article you're interested in needs to have a registered DOI (generally only applies to journal articles).  Occasionaly some articles don't have associated BibTeX data stored with them, and a "Not Available" notification will be posted.
 
-For certain journals (currently only [Wind Energy](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1824), because that's what I happen to use) the PDF will also be automatically downloaded (if you have a subscription to the journal) and linked to your BibDesk entry.  Unfortunately there is no universal way to automatically get the PDF because every journal uses a different link format, but I provide hooks in the script to allow addition of other journals.  Or the workflow can take you to the article's landing page as discussed below, and you can manually download the PDF.
+For certain journals (currently only [Wind Energy][1], because that's what I happen to use) the PDF will also be automatically downloaded (if you have a subscription to the journal) and linked to your BibDesk entry.  Unfortunately there is no universal way to automatically get the PDF because every journal uses a different link format, but I provide hooks in the script to allow addition of other journals.  Or the workflow can take you to the article's landing page as discussed below, and you can manually download the PDF.
 
 ### ref "search terms" \[cmd\]
 
@@ -56,7 +59,7 @@ Searches Google Scholar for relevant journal/conference papers, imports the asso
 
 ### Keyboard Shortcut or File Action
 
-You can select a PDF in Finder and press a custom keyboard shortcut, or use a file action on an PDF to try to get the associated BibTeX.  The script will scan the first page of the PDF, and will attempt to find a DOI.  If it cannot find a valid DOI, it will grab the first dozen capitalized words.  In either case, it will use those terms (DOI, or capitalized words) to initiate the CrossRef search from above.  The search will not be immediately executed so you can still modify the search terms to your liking.  Additionally, the location of the PDF will be remembered so that it will be automatically linked to the new BibTeX entry.
+You can select a PDF in Finder and press a custom keyboard shortcut, or use a file action on an PDF to try to get the associated BibTeX.  The script will scan the first page of the PDF, and will attempt to find a DOI.  If it cannot find a valid DOI, it will grab the first dozen capitalized words.  In either case, it will use those terms (DOI, or capitalized words) to initiate the [CrossRef search from above](#ref-search-terms).  The search will not be immediately executed so you can still modify the search terms to your liking.  Additionally, the location of the PDF will be remembered so that it will be automatically linked to the new BibTeX entry.
 
 If your paper happens to be an AIAA paper, then it will initiate the AIAA search below instead of the more generic CrossRef search, but since the search is not immediately executed you can of change the search to anything else (e.g., **book** or **gsref**).
 
@@ -74,10 +77,23 @@ If you hold down [cmd] when actioning an article, just the PDF will be downloade
 #### [[Download Reference Import Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-import/Reference%20Import.alfredworkflow)]
 
 
+[1]: http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1824
+
+#### Acknowledgments
+
+The following packages/codes are used within this workflows:
+
+- [Requests](http://docs.python-requests.org/en/latest/), an HTTP library written in Python.
+- [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/), a Python library for parsing HTML
+- [pdftotext](http://www.foolabs.com/xpdf/download.html)
+- [alfred-python](https://github.com/nikipore/alfred-python), a lightweight wrapper to Alfred's workflow API
+
 
 
 NumPy Search
 ------------
+
+#### [[Download NumPy Search Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/numpy-search/NumPy%20Search.alfredworkflow)]
 
 ![](screenshots/np.tiff)
 
@@ -103,6 +119,8 @@ The workflow contains a cached version of the relevant information from the NumP
 LaTeX Tools
 -----------
 
+#### [[Download LaTeX Tools Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/latex-tools/LaTeX%20Tools.alfredworkflow)]
+
 ![](screenshots/texcount.tiff)
 
 **texcount "tex file"**
@@ -120,6 +138,8 @@ TexDiff is a file action to compare two LaTeX files using the Perl script [latex
 
 Go To Current File
 ------------------
+
+#### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
 
 Allows you to assign a keyboard shortcut to quickly go to the current file in Finder or Terminal (or iTerm2).  For example, you are working on a presentation in Keynote and want to go to the corresponding directory.  You could right click on the title of the file in the menu bar and then click in the folder (plus an additional step if you want to get to the terminal), or just hit a keyboard shortcut and go right there.
 
@@ -147,15 +167,6 @@ If it does not work for certain applications, make sure you have given Alfred pe
 
 #### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
 
-
-Acknowledgments
----------------
-
-The following packages/modules are used within these workflows:
-
-- [Requests](http://docs.python-requests.org/en/latest/), an HTTP library written in Python.
-- [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/), a Python library for parsing HTML
-- [alfred-python](https://github.com/nikipore/alfred-python), a lightweight wrapper to Alfred's workflow API
 
 License
 -------
