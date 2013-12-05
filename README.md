@@ -3,11 +3,76 @@ alfred-workflows-scientific
 
 A collection of [Alfred v2](http://www.alfredapp.com) workflows targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
 
-- [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
-- [Citation Search](#citation-search): lookup articles using any citation metadata and either download the associated BibTeX entry, go to the landing page for the article, or copy a formatted reference.
-- [AIAA Search](#aiaa-search): lookup AIAA articles using any metadata and download the associated BibTeX entry or the actual PDF (AIAA subscription required for PDF).
-- [LaTeX Tools](#latex-tools): tools for working with LaTeX files.  Currently a word/figure/equation count, and a diff workflow for comparing two LaTeX files in a compiled PDF.
+- [Reference Import](#reference-import): search for an article/book from a variety of sources and import the corresponding reference data (BibTex, PDF) into BibDesk, copy BibTeX to clipboard, go to the landing page for the article, or copy a formatted reference.  Also supports reference lookup from a PDF file. (This workflow was formerly known as "Citation Search" and "AIAA Search")
 - [Go To Current File](#go-to-current-file): Keyboard shortcut to quickly go to the file in the frontmost app (either in Finder, Terminal, or iTerm2).
+- [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
+- [LaTeX Tools](#latex-tools): tools for working with LaTeX files.  Currently a word/figure/equation count, and a diff workflow for comparing two LaTeX files in a compiled PDF.
+
+
+## Reference Import 
+
+This workflow is a combination of two of my former workflows (Citation Search and AIAA Search) with many improvements and new features.  It allows you to import BibTeX, and in some cases a linked PDF, for:
+
+- journal articles through a CrossRef DOI lookup
+- books thorough Google Books
+- journal and conference papers through Google Scholar search
+- a PDF on your computer by scanning the PDF for its DOI and then going through CrossRef
+- AIAA journal and conference papers
+
+This workflow is primarily intended to work with [BibDesk](http://bibdesk.sourceforge.net), but it also copies the BibTeX to the clipboard so it can be used with other applications.  If you do use BibDesk it is recommended that you set the preference in BibDesk to open a certain file at application launch.  Otherwise, you will need to have the BibDesk document open that you want to import to before running the workflow.
+
+### ref "search terms"
+
+![](screenshots/ref.tiff)
+
+
+A search api (beta) provided by [CrossRef](http://search.labs.crossref.org) attempts to match your provided citation metadata.  You can search using any part of a citation (e.g., author names, article title, digital object identifier (DOI), etc.), or even a full citation.  The workflow then grabs the associated BibTeX reference from CrossRef.  Obviously the article you're interested in needs to have a registered DOI (generally only applies to journal articles).  Occasionaly some articles don't have associated BibTeX data stored with them, and a "Not Available" notification will be posted.
+
+For certain journals (currently only [Wind Energy](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1824), because that's what I happen to use) the PDF will also be automatically downloaded (if you have a subscription to the journal) and linked to your BibDesk entry.  Unfortunately there is no universal way to automatically get the PDF because every journal uses a different link format, but I provide hooks in the script to allow addition of other journals.  Or the workflow can take you to the article's landing page as discussed below, and you can manually download the PDF.
+
+### ref "search terms" \[cmd\]
+
+Hold down [cmd] when actioning an article to go to the landing page associated with the article.  If you have a subscription to the associated journal you can then access the PDF.
+
+### ref "search terms" \[alt\]
+
+Hold down alt \(option) when actioning an article to copy a formatted reference to the clipboard.  Theoretically the API used by CrossRef should allow you to format the reference using any style in the [Citation Style Language](https://github.com/citation-style-language/styles) database.  However, in practice I've found that the vast majority are not working.  For now, until a better solution can be found, the formatted reference is in APA format.
+
+### ref "doi"!!
+
+I've noticed that for some recently added papers the DOI information will be registered, but the data is not yet indexed by the CrossRef search engine.  If you do have the DOI, you can bypass the search and attempt to just grab the relevant citation data directly.  Just add a double bang (two exclamation marks) after the DOI to bypass the metadata search.  (This option also works will the [cmd] and [alt] modifiers).
+
+### book "search terms"
+
+![](screenshots/book.tiff)
+
+Uses Google Books API to search the Google books repository.  Selecting a book will import corresponding BibTeX into BibDesk and copy the BibTeX to the clipboard.
+
+### gsref "search terms".  (note the period)
+
+![](screenshots/gs.tiff)
+
+Searches Google Scholar for relevant journal/conference papers, imports the associated BibTeX, and if a PDF is available will also download the PDF and link it to the corresponding BibDesk entry.  I've disabled search as you type for this particular query, because Google Scholar will block you for the day if you send searches too rapidly and it thinks you are a bot.  When your query is complete, add a period "." to the end in order to actually trigger the search.
+
+### Keyboard Shortcut or File Action
+
+You can select a PDF in Finder and press a custom keyboard shortcut, or use a file action on an PDF to try to get the associated BibTeX.  The script will scan the first page of the PDF, and will attempt to find a DOI.  If it cannot find a valid DOI, it will grab the first dozen capitalized words.  In either case, it will use those terms (DOI, or capitalized words) to initiate the CrossRef search from above.  The search will not be immediately executed so you can still modify the search terms to your liking.  Additionally, the location of the PDF will be remembered so that it will be automatically linked to the new BibTeX entry.
+
+If your paper happens to be an AIAA paper, then it will initiate the AIAA search below instead of the more generic CrossRef search, but since the search is not immediately executed you can of change the search to anything else (e.g., **book** or **gsref**).
+
+### aiaa "search terms"
+
+![](screenshots/aiaa.tiff)
+
+A custom search for papers published with [The American Institute of Aeronautics and Astronautics](http://arc.aiaa.org) (AIAA).  I added this because not all AIAA papers are found with the CrossRef search, particularly conference papers (and I use AIAA so I wanted this).  AIAA does not provide a REST API, so I'm relying on screen scraping which means the performance will be a bit slower than the others (so be a little more patient while searching).  If you have a subscription to AIAA this will also download the corresponding PDF and link it to the BibDesk entry.
+
+### aiaa "search terms" \[cmd\]
+
+If you hold down [cmd] when actioning an article, just the PDF will be downloaded, but not the BibTeX entry (an AIAA subscription is required only for the PDF download functionality).
+
+
+#### [[Download Reference Import Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-import/Reference%20Import.alfredworkflow)]
+
 
 
 
@@ -28,48 +93,11 @@ The workflow contains a cached version of the relevant information from the NumP
 
 
 
-Citation Search
----------------
-
-![](screenshots/cite.tiff)
-
-**cite "citation metadata"**
-
-A search api (beta) provided by [CrossRef](http://search.labs.crossref.org) attempts to match your provided citation metadata.  You can search using any part of a citation (e.g., author names, article title, digital object identifier (DOI), etc.), or even a full citation.  It then grabs the associated BibTeX reference from the [International DOI Foundation](http://dx.doi.org) (IDF).  If you have the application [BibDesk](http://bibdesk.sourceforge.net) and one of its documents is open (or if you've set the preference in BibDesk to open a file at application launch), the BibTex entry will be directly imported.  For those that don't use BibDesk, the BibTeX reference is also copied to the clipboard.  Obviously the article you're interested in needs to have a registered DOI with IDF (generally only journal articles).  Occasionaly some articles don't have associated BibTeX data stored with them, and a "Not Available" notification will be posted.
-
-**cite "citation metadata" [cmd]**
-
-Hold down [cmd] when actioning an article to go to the landing page associated with the article.  If you have a subscription to the associated journal you can then access the PDF.
-
-**cite "citation metadata" [alt]**
-
-Hold down [alt] \(option) when actioning an article to copy a formatted reference to the clipboard.  Theoretically the API used by doi.org should allow you to format the reference using any style in the [Citation Style Language](https://github.com/citation-style-language/styles) database.  However, in practice I've found that the vast majority are not working.  For now, until a better solution can be found, the formatted reference is in APA format.
-
-**cite "doi"!!**
-
-I've noticed that for some recently added papers the DOI information will be registered with doi.org, but the data is not yet indexed by the CrossRef search engine.  If you do have the DOI, there is no need for going through CrossRef anyway and you can just grab the relevant citation data directly.  Just add a double bang (two exclamation marks) after the DOI to bypass the metadata search.  (This option also works will the [cmd] and [alt] modifiers).
 
 
 
 
-#### [[Download Citation Search Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/citation-search/Citation%20Search.alfredworkflow)]
 
-
-
-AIAA Search
------------
-
-![](screenshots/aiaa.tiff)
-
-**aiaa "citation info"**
-
-Similar to BibTeX Grab, but specifically designed for searching for papers published with [The American Institute of Aeronautics and Astronautics](http://arc.aiaa.org) (AIAA).  If you're looking for an AIAA paper, this workflow is definitely preferrable to BibTeX Grab, as it contains all published AIAA papers (conference or journal).  There is no official API for this, so performance is a bit slower.  If a [BibDesk](http://bibdesk.sourceforge.net) document is open (or if you've set the preference in BibDesk to open a file at application launch), the BibTex entry will be directly imported.  For those that don't use BibDesk, the BibTeX reference is also copied to the clipboard.
-
-**aiaa "citation info" [cmd]**
-
-If you hold down [cmd] when actioning an article, the PDF will be downloaded directly from AIAA (an AIAA subscription is required only for the PDF download functionality).
-
-#### [[Download AIAA Search Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/aiaa-search/AIAA%20Search.alfredworkflow)]
 
 
 LaTeX Tools
