@@ -53,23 +53,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>62</integer>
-				<key>script</key>
-				<string>osascript finder.scpt</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F37FD065-0098-4FFC-A884-F0656104C3DA</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -89,6 +72,23 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>55CAD864-2540-4535-8AC9-1A807CB000F8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>script</key>
+				<string>osascript finder.scpt MS</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F37FD065-0098-4FFC-A884-F0656104C3DA</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -123,7 +123,7 @@
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>script</key>
-				<string>osascript terminal.scpt</string>
+				<string>osascript terminal.scpt MS</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -131,23 +131,6 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>62</integer>
-				<key>script</key>
-				<string>osascript iterm.scpt</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9D545365-4860-4D5F-A57B-20899C2402ED</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -173,6 +156,23 @@
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>571D7149-BE62-4971-AE34-51BBA3843D3A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>script</key>
+				<string>osascript iterm.scpt MS</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9D545365-4860-4D5F-A57B-20899C2402ED</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
