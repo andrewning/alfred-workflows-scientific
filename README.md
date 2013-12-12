@@ -4,7 +4,7 @@ alfred-workflows-scientific
 A collection of [Alfred v2](http://www.alfredapp.com) workflows targeting scientific applications.  Use of workflows requires the Alfred PowerPack.
 
 - [Reference Importer](#reference-importer): search for an article/book from a variety of sources and import the corresponding reference data (BibTex, PDF) into BibDesk, copy BibTeX to clipboard, go to the landing page for the article, or copy a formatted reference.  Also supports reference lookup from a PDF file. (This workflow was formerly known as "Citation Search" and "AIAA Search")
-- [Go To Current File](#go-to-current-file): Keyboard shortcut to quickly go to the file in the frontmost app (either in Finder, Terminal, or iTerm2).
+- [Go To Current File](#go-to-current-file): Keyboard shortcut to quickly go to the file in the frontmost app (either in Finder, Terminal, iTerm2, or Alfred's File Action Window).
 - [NumPy Search](#numpy-search): search methods within the NumPy module and open the associated documentation in your browser.
 - [LaTeX Tools](#latex-tools): tools for working with LaTeX files.  Currently a word/figure/equation count, and a diff workflow for comparing two LaTeX files in a compiled PDF.
 
@@ -95,13 +95,13 @@ Go To Current File
 
 #### [[Download Go To Current File Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File.alfredworkflow)]
 
-Allows you to assign a keyboard shortcut to quickly go to the current file in Finder or Terminal (or iTerm2).  For example, you are working on a presentation in Keynote and want to go to the corresponding directory.  You could right click on the title of the file in the menu bar and then click in the folder (plus an additional step if you want to get to the terminal), or just hit a keyboard shortcut and go right there.
+Allows you to assign a keyboard shortcut to quickly go to the current file in Finder, Terminal (or iTerm2), or Alfred's File Action Window.  For example, you are working on a presentation in Keynote and want to go to the corresponding directory.  You could right click on the title of the file in the menu bar and then click in the folder (plus an additional step if you want to get to the terminal), or just hit a keyboard shortcut and go right there.
 
 This may not necessarily work for all applications---some are not file-based so it wouldn't make sense, and some use non-standard properties.  It should definitely work for apps that follow standard AppleScript conventions: iWork (Keynote, Pages, Numbers), Preview, Skim, BibDesk, Byword, MS Office (PowerPoint, Word, Excel), Marked, etc..  It has a fall-back method for those apps that don't provide an AppleScript Dictionary or are non-standard (Sublime Text).  If you come across an app this doesn't work for, let me know and I'll see if it's possible to add.
 
 **Note for Microsoft Office users**: 
 
-Microsoft Office doesn't follow standard AppleScript.  To prevent the script from throwing errors from those who did not use MS Office, I left this functionality out by default.  You should download [this version](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File%20MS.alfredworkflow) instead.  The only difference is each "Run Script" adds the key phrase MS at the end, which triggers a slightly different workflow.
+Microsoft Office doesn't follow standard AppleScript.  To prevent the script from throwing errors from those who did not use MS Office, I left this functionality out by default.  You should download [this version](https://github.com/andrewning/alfred-workflows-scientific/raw/master/goto-file/Go%20To%20Current%20File%20MS.alfredworkflow) instead.  The only difference is each "Run Script" adds the key phrase MS at the end which lets the script know its OK to check for MS Office files in addition to all the others.
 
 **Note on Terminal/iTerm2**: 
 
