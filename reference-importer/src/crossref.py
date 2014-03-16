@@ -40,6 +40,10 @@ else:
         subtitle = entries[0]
         if len(entries) > 1:
             subtitle += (''.join(entries[2:])[2:])
+
+        # strip out html tag for italic
+        subtitle = subtitle.replace('<i>', '')
+        subtitle = subtitle.replace('</i>', '')
         results.append(alfred.Item(title=j['title'],
                                    subtitle=subtitle,
                                    attributes={'uid': doi, 'arg': doi},
