@@ -28,6 +28,7 @@ if action == 'bibtex':
     r.encoding = 'utf-8'
     bibtex = r.text
     bibtex = bibtex.replace('&amp;', '&')
+    bibtex = bibtex.strip()
 
     # figure out which Journal (if any) this is
     PDFURL = None
