@@ -24,6 +24,9 @@ data = {'doi': doi,
         'include': 'cit'}
 r = requests.get('http://arc.aiaa.org/action/downloadCitation', params=data)
 
+if '<h1>Server Busy</h1>' in r.text:
+    print 'AIAA server is busy, try again later.'
+    exit()
 
 # parse cit data
 for line in r.text.split('\n'):
