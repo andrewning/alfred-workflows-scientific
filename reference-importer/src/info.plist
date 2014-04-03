@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>aning.ref</string>
+	<key>category</key>
+	<string>Mine</string>
 	<key>connections</key>
 	<dict>
 		<key>469F2D15-9086-44C9-BC8D-50AB27538486</key>
@@ -563,11 +565,9 @@
 				<key>argument</key>
 				<integer>1</integer>
 				<key>hotkey</key>
-				<integer>35</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>393216</integer>
-				<key>hotstring</key>
-				<string>P</string>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>

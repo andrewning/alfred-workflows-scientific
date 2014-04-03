@@ -101,9 +101,10 @@ def importBibTeXIntoBibDesk(bibtex, withPDFURL=None):
         exit()
 
     # convert to latex format (e.g., & -> \&)
-    # bibtex = unicode(bibtex, 'utf-8')
     for key in unicode_to_latex.keys():
         bibtex = bibtex.replace(key, unicode_to_latex[key])
+
+    bibtex = bibtex.encode('utf-8')
 
     # replace cite-key to allow bibtex to generate own
     bibtex = re.sub('{.*?,', '{cite-key,', bibtex, count=1)

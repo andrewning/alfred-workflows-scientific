@@ -11,11 +11,11 @@ from bs4 import BeautifulSoup, SoupStrainer
 import alfred
 import sys
 
-# from common import waitForEndOfQuery
+# from common import waitForPeriodInQuery
 
 
 # get query from user
-# query = waitForEndOfQuery('Search AIAA Aerospace Research Central', 'aiaa.png')
+# query = waitForPeriodInQuery('Search AIAA Aerospace Research Central', 'aiaa.png')
 query = sys.argv[1]
 
 # grab search data
