@@ -22,6 +22,7 @@ params = {'q': query, 'maxResults': 10, 'fields': 'items(volumeInfo(title,subtit
 
 # search on google books
 r = requests.get('https://www.googleapis.com/books/v1/volumes', params=params)
+r.encoding = 'utf-8'
 
 results = []
 
