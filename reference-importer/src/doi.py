@@ -7,6 +7,7 @@ Created by Andrew Ning on April 4, 2013
 """
 
 import requests
+from bs4 import BeautifulSoup, SoupStrainer
 import sys
 import re
 from subprocess import call
@@ -38,8 +39,14 @@ if action == 'bibtex':
         Journal = match.group(1)
 
     # get PDF for Wind Energy
-    if Journal == 'Wind Energy':
+    if Journal == 'Wind Energy' or Journal == 'Wind Energ.':
         PDFURL = 'http://onlinelibrary.wiley.com/doi/' + doi + '/pdf'
+
+        # need to do additional parsing to get directly link to PDF
+        r = requests.get(PDFURL)
+        only_iframe = SoupStrainer('iframe', {'id': 'pdfDocument'})
+        webpage = BeautifulSoup(r.text, parse_only=only_iframe)
+        PDFURL = webpage.iframe['src']
 
     # [INSERT HERE: if you want to try to auto link a PDF from some other journal
     #   follow the example above for Wind Energy.  I've already parsed out the
