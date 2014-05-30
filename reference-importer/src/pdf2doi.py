@@ -28,6 +28,10 @@ if result is None:
 if result is not None:
     doi = result.group(1)
 
+    # check if this was actually a URL
+    if doi.startswith('org/'):
+        doi = doi[4:]
+
 else:
     # couldn't find DOI, grab the first dozen capitalized words as a fallback
     words = re.sub("\W", " ", txt).strip().split()
