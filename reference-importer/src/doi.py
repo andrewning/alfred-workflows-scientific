@@ -19,7 +19,11 @@ from common import importBibTeXIntoBibDesk, runAppleScript
 doi = sys.argv[1]
 action = sys.argv[2]
 
+# fix escaped chars
+doi = doi.replace('\\', '')
+
 if action == 'bibtex':
+
 
     # use REST API (see http://crosscite.org/cn/)
     headers = {'Accept': 'application/x-bibtex'}
@@ -46,7 +50,8 @@ if action == 'bibtex':
         r = requests.get(PDFURL)
         only_iframe = SoupStrainer('iframe', {'id': 'pdfDocument'})
         webpage = BeautifulSoup(r.text, parse_only=only_iframe)
-        PDFURL = webpage.iframe['src']
+        if webpage.iframe is not None:
+            PDFURL = webpage.iframe['src']
 
     # [INSERT HERE: if you want to try to auto link a PDF from some other journal
     #   follow the example above for Wind Energy.  I've already parsed out the
