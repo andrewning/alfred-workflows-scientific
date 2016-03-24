@@ -20,7 +20,7 @@ This workflow is a combination of two of my former workflows (Citation Search an
 - books thorough Google Books
 - journal and conference papers through Google Scholar search
 - a PDF on your computer by scanning the PDF for its DOI and then going through CrossRef
-- AIAA journal and conference papers
+- AIAA journal and conference papers (these are now available through CrossRef so the separate AIAA functionality was removed)
 
 This workflow is primarily intended to work with [BibDesk](http://bibdesk.sourceforge.net), but it also copies the BibTeX to the clipboard so it can be used with other applications.  If you do use BibDesk it is recommended that you set the preference in BibDesk to open a certain file at application launch.  Otherwise, you will need to have the BibDesk document open that you want to import to before running the workflow.
 
@@ -60,18 +60,6 @@ Searches Google Scholar for relevant journal/conference papers, imports the asso
 ### Keyboard Shortcut or File Action
 
 You can select a PDF in Finder and press a custom keyboard shortcut, or use a file action on an PDF to try to get the associated BibTeX.  The script will scan the first page of the PDF, and will attempt to find a DOI.  If it cannot find a valid DOI, it will grab the first dozen capitalized words.  In either case, it will use those terms (DOI, or capitalized words) to initiate the [CrossRef search from above](#ref-search-terms).  The search will not be immediately executed so you can still modify the search terms to your liking.  Additionally, the location of the PDF will be remembered so that it will be automatically linked to the new BibTeX entry.
-
-If your paper happens to be an AIAA paper, then it will initiate the AIAA search below instead of the more generic CrossRef search, but since the search is not immediately executed you can of change the search to anything else (e.g., **book** or **gsref**).
-
-### aiaa "search terms"
-
-![](screenshots/aiaa.tiff)
-
-A custom search for papers published with [The American Institute of Aeronautics and Astronautics](http://arc.aiaa.org) (AIAA).  I added this because not all AIAA papers are found with the CrossRef search, particularly conference papers (and I use AIAA so I wanted this).  AIAA does not provide a REST API, so I'm relying on screen scraping which means the performance will be a bit slower than the others (so be a little more patient while searching).  If you have a subscription to AIAA this will also download the corresponding PDF and link it to the BibDesk entry.
-
-### aiaa "search terms" \[cmd\]
-
-If you hold down [cmd] when actioning an article, just the PDF will be downloaded, but not the BibTeX entry (an AIAA subscription is required only for the PDF download functionality).
 
 
 #### [[Download Reference Importer Workflow](https://github.com/andrewning/alfred-workflows-scientific/raw/master/reference-importer/Reference%20Importer.alfredworkflow)]

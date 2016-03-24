@@ -47,15 +47,16 @@ else:
     doi = ' '.join(phrase)
 
 
-# Check for AIAA to use specialized search
-result = re.search('AIAA', txt)
-if result is None:
-    result = re.search('American Institute of Aeronautics and Astronautics', txt)
+# # Check for AIAA to use specialized search
+# result = re.search('AIAA', txt)
+# if result is None:
+#     result = re.search('American Institute of Aeronautics and Astronautics', txt)
 
-if result is not None:
-    search = 'aiaa'
-else:
-    search = 'ref'
+# if result is not None:
+#     search = 'aiaa'
+# else:
+
+search = 'ref'
 
 
 # copy file to temporary location
