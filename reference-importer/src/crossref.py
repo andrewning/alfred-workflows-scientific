@@ -29,7 +29,7 @@ else:
 
     # Use crossref metadata search (beta) to get the DOI
     params = {'q': query, 'rows': '10'}
-    r = requests.get('http://search.labs.crossref.org/dois', params=params)
+    r = requests.get('http://search.crossref.org/dois', params=params)
 
     # write results in XML format for Alfred
     results = []
