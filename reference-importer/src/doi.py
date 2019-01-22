@@ -26,7 +26,7 @@ if action == 'bibtex':
 
 
     # use REST API (see http://crosscite.org/cn/)
-    headers = {'Accept': 'application/x-bibtex'}
+    headers = {'Accept': 'text/bibliography; style=bibtex'}
     r = requests.post('http://dx.doi.org/' + doi, headers=headers)
 
     # extract bibtex
@@ -35,28 +35,28 @@ if action == 'bibtex':
     bibtex = bibtex.replace('&amp;', '&')
     bibtex = bibtex.strip()
 
-    # figure out which Journal (if any) this is
+    # # figure out which Journal (if any) this is
     PDFURL = None
-    match = re.search('[jJ]ournal\s*=\s*\{(.*?)\}', bibtex)
-    Journal = ''
-    if match:
-        Journal = match.group(1)
+    # match = re.search('[jJ]ournal\s*=\s*\{(.*?)\}', bibtex)
+    # Journal = ''
+    # if match:
+    #     Journal = match.group(1)
 
-    # get PDF for Wind Energy
-    if Journal == 'Wind Energy' or Journal == 'Wind Energ.':
-        PDFURL = 'http://onlinelibrary.wiley.com/doi/' + doi + '/pdf'
+    # # get PDF for Wind Energy
+    # if Journal == 'Wind Energy' or Journal == 'Wind Energ.':
+    #     PDFURL = 'http://onlinelibrary.wiley.com/doi/' + doi + '/pdf'
 
-        # need to do additional parsing to get directly link to PDF
-        r = requests.get(PDFURL)
-        only_iframe = SoupStrainer('iframe', {'id': 'pdfDocument'})
-        webpage = BeautifulSoup(r.text, parse_only=only_iframe)
-        if webpage.iframe is not None:
-            PDFURL = webpage.iframe['src']
+    #     # need to do additional parsing to get directly link to PDF
+    #     r = requests.get(PDFURL)
+    #     only_iframe = SoupStrainer('iframe', {'id': 'pdfDocument'})
+    #     webpage = BeautifulSoup(r.text, parse_only=only_iframe)
+    #     if webpage.iframe is not None:
+    #         PDFURL = webpage.iframe['src']
 
-    # [INSERT HERE: if you want to try to auto link a PDF from some other journal
-    #   follow the example above for Wind Energy.  I've already parsed out the
-    #   journal name.  You could potentially parse out other bits of info from the
-    #   BibTeX as search criteria. ]
+    # # [INSERT HERE: if you want to try to auto link a PDF from some other journal
+    # #   follow the example above for Wind Energy.  I've already parsed out the
+    # #   journal name.  You could potentially parse out other bits of info from the
+    # #   BibTeX as search criteria. ]
 
     # import bibtex
     importBibTeXIntoBibDesk(bibtex, PDFURL)
