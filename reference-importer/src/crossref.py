@@ -34,7 +34,7 @@ else:
     # write results in XML format for Alfred
     results = []
     for j in r.json():
-        doi = j['doi'].split('dx.doi.org/')[1]
+        doi = j['doi']
         info = j['fullCitation']
         entries = info.split('\'')
         subtitle = entries[0]
