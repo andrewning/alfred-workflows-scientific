@@ -1,56 +1,72 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 # encoding: utf-8
-"""
-doi.py
 
-Created by Andrew Ning on April 4, 2013
-"""
-
-
-import requests
-import alfred
+import re
 import sys
-
+from workflow import Workflow
 
 # get query from user
 query = sys.argv[1]
 
+def main(wf):
+    from habanero import Crossref
+    cr = Crossref()
 
-if query.endswith('!!'):
+    if re.match(r'^10.\d{4,9}.+$', query):
+        
+        r = cr.works(ids = query)
+        item = r['message']
+        uid = item['DOI']
+        title = item['title'][0]
+        journal = item['short-container-title'][0]
+        arg = item['DOI']
+        subtitle = []
+        if 'author' in item:
+            for author in item['author']:
+                auth = author['given'] + ", " + author['family']
+                subtitle.append(auth)
+            subtitle = '; '.join(subtitle)
+        subtitle = subtitle + ' in Journal: ' + journal
 
-    doi = query.split('!!')[0].rstrip().lstrip()
-    results = [alfred.Item(title='Lookup by DOI: ' + doi,
-                           subtitle='Import BibTeX',
-                           attributes={'uid': doi, 'arg': doi},
-                           icon='crossref.png')]
+        wf.add_item(uid = uid,
+            title = title,
+            subtitle = subtitle,
+            arg = arg,
+            valid = True,
+            icon = "crossref.png")
+        wf.send_feedback()
+    
+    else:
 
-else:
+        r = cr.works(query = query)
+        items = r['message']['items']
 
+        for item in items:
+            uid = item['DOI']
+            title = []
+            if 'title' in item:
+                title = item['title'][0]
+            journal = []
+            if 'short-container-title' in item:
+                journal = item['short-container-title'][0]
+            arg = item['DOI']
+            subtitle = []
+            if 'author' in item:
+                for author in item['author']:
+                    if (('given' in author) and ('family' in author)):
+                        auth = author['given'] + ", " + author['family']
+                        subtitle.append(auth)
+                subtitle = '; '.join(subtitle)
+            subtitle = ''.join([str(elem) for elem in subtitle]) + ' in Journal: ' + ''.join([str(elem) for elem in journal])
 
-    # Use crossref metadata search (beta) to get the DOI
-    params = {'q': query, 'rows': '10'}
-    r = requests.get('http://search.crossref.org/dois', params=params)
+            wf.add_item(uid = uid,
+                title = title,
+                subtitle = subtitle,
+                arg = arg,
+                valid = True,
+                icon = "crossref.png")
+        wf.send_feedback()
 
-    # write results in XML format for Alfred
-    results = []
-    for j in r.json():
-        doi = j['doi']
-        info = j['fullCitation']
-        entries = info.split('\'')
-        subtitle = entries[0]
-        if len(entries) > 1:
-            subtitle += (''.join(entries[2:])[2:])
-
-        # strip out html tag for italic
-        subtitle = subtitle.replace('<i>', '')
-        subtitle = subtitle.replace('</i>', '')
-        results.append(alfred.Item(title=j['title'],
-                                   subtitle=subtitle,
-                                   attributes={'uid': doi, 'arg': doi},
-                                   icon='crossref.png'))
-
-
-sys.stdout.write(alfred.xml(results))
-
-
-
+if __name__ == u"__main__":
+    wf = Workflow()
+    sys.exit(wf.run(main))

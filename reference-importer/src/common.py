@@ -86,7 +86,7 @@ def runAlfredSearch(search, query):
     '''run Alfred script filter for Citation Search'''
 
     script = '''
-    tell application "Alfred 2" to search "{0} {1}"
+    tell application "Alfred 4" to search "{0} {1}"
     '''.format(search, query.replace('\\', '\\\\').replace('"', '\\"'))
     runAppleScript(script)
 
@@ -129,7 +129,7 @@ def importBibTeXIntoBibDesk(bibtex, withPDFURL=None):
             pass
 
         # check if the URL is actually for a PDF
-        if r.headers['content-type'] == 'application/pdf':
+        if 'application/pdf' in r.headers['content-type']:
 
             f = open(filename, 'wb')
 
