@@ -47,17 +47,16 @@ def main(wf):
             if 'title' in item:
                 title = item['title'][0]
             journal = []
-            if 'short-container-title' in item:
-                journal = item['short-container-title'][0]
+            if 'container-title' in item:
+                journal = item['container-title'][0]
             arg = item['DOI']
-            subtitle = []
+            authors = []
             if 'author' in item:
                 for author in item['author']:
                     if (('given' in author) and ('family' in author)):
                         auth = author['given'] + ", " + author['family']
-                        subtitle.append(auth)
-                subtitle = '; '.join(subtitle)
-            subtitle = ''.join([str(elem) for elem in subtitle]) + ' in Journal: ' + ''.join([str(elem) for elem in journal])
+                        authors.append(auth)
+            subtitle = '; '.join(authors) + ' in Journal: ' + ''.join(journal)
 
             wf.add_item(uid = uid,
                 title = title,
