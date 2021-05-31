@@ -3,7 +3,8 @@
 
 import sys
 from workflow import Workflow
-
+from subprocess import call
+from habanero import cn
 
 def main(wf):
     
@@ -24,6 +25,23 @@ def main(wf):
         PDFURL = None
 
         importBibTeXIntoBibDesk(bibtex, PDFURL)
+    
+    elif action == 'url':
+        
+        call(['open', 'http://dx.doi.org/' + doi])
+    
+    elif action == 'ref':
+
+        ref = cn.content_negotiation(ids= doi, format="text", style="apa")
+
+        script = '''
+        set the clipboard to "{0}"
+        '''.format(ref.replace('\\', '\\\\').replace('"', '\\"'))
+        
+        runAppleScript(script)
+
+    sys.stdout.write(ref)
+
 
 if __name__ == u"__main__":
     wf = Workflow()
