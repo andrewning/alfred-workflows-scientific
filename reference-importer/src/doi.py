@@ -40,7 +40,7 @@ def main(wf):
         
         runAppleScript(script)
 
-    sys.stdout.write(ref)
+        sys.stdout.write(ref)
 
 
 if __name__ == u"__main__":
