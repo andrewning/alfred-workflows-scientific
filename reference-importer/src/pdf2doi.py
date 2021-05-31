@@ -21,7 +21,7 @@ txt = subprocess.Popen(["./pdftotext", "-q", "-l", "1", pdffile, "-"], stdout=su
 
 
 # try to get DOI
-result = re.search('[Dd][Oo][Ii][\s\.\:]{0,2}(.*?)[\s\n\]\)\}]+', txt)
+result = re.search('\\b(10.\d{4,9}/[-._;()/:A-Z0-9]+)\\b', txt)
 if result is None:
     result = re.search('\\b(10[.][0-9]{4,}(?:[.][0-89]+)*/(?:(?!["&\'])\S)+)\\b', txt)
 

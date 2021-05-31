@@ -18,20 +18,25 @@ def main(wf):
         item = r['message']
         uid = item['DOI']
         title = item['title'][0]
-        journal = item['short-container-title'][0]
-        arg = item['DOI']
+        journal = []
+        if 'container-title' in item:
+            journal = item['container-title'][0]
+        elif 'short-container-title' in item:
+            journal = item['short-container-title'][0]
+        elif 'institution' in item:
+            journal = item['institution']['name']
         subtitle = []
         if 'author' in item:
             for author in item['author']:
                 auth = author['given'] + ", " + author['family']
                 subtitle.append(auth)
             subtitle = '; '.join(subtitle)
-        subtitle = subtitle + ' in Journal: ' + journal
+        subtitle = subtitle + ' in Source: ' + journal
 
         wf.add_item(uid = uid,
             title = title,
             subtitle = subtitle,
-            arg = arg,
+            arg = uid,
             valid = True,
             icon = "crossref.png")
         wf.send_feedback()
@@ -49,19 +54,22 @@ def main(wf):
             journal = []
             if 'container-title' in item:
                 journal = item['container-title'][0]
-            arg = item['DOI']
+            elif 'short-container-title' in item:
+                journal = item['short-container-title'][0]
+            elif 'institution' in item:
+                journal = item['institution']['name']
             authors = []
             if 'author' in item:
                 for author in item['author']:
                     if (('given' in author) and ('family' in author)):
                         auth = author['given'] + ", " + author['family']
                         authors.append(auth)
-            subtitle = '; '.join(authors) + ' in Journal: ' + ''.join(journal)
+            subtitle = '; '.join(authors) + ' in Source: ' + ''.join(journal)
 
             wf.add_item(uid = uid,
                 title = title,
                 subtitle = subtitle,
-                arg = arg,
+                arg = uid,
                 valid = True,
                 icon = "crossref.png")
         wf.send_feedback()
