@@ -57,7 +57,7 @@ def main(wf):
             elif 'short-container-title' in item:
                 journal = item['short-container-title'][0]
             elif 'institution' in item:
-                journal = item['institution']['name']
+                journal = item['institution'][0]
             authors = []
             if 'author' in item:
                 for author in item['author']:
