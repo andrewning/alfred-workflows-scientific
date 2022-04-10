@@ -4,29 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>aning.ref</string>
-	<key>category</key>
-	<string>Mine</string>
 	<key>connections</key>
 	<dict>
-		<key>469F2D15-9086-44C9-BC8D-50AB27538486</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2F171503-D289-4017-876E-6A9863D79D72</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A6D0AD5E-2D1E-42F6-9397-38A21C595070</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<array>
 			<dict>
@@ -36,22 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>1CC6A99C-D81B-4848-B4C7-C4E7FD477CA2</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Go to landing page</string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>469F2D15-9086-44C9-BC8D-50AB27538486</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Copy formatted reference</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>8EFF7A5D-A827-4688-BE75-337AD2FCA4BA</key>
@@ -63,6 +28,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>95EBDFC4-CE14-4D42-9307-570F23C6D613</key>
@@ -74,6 +41,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>B2AB1647-56C0-456D-92E0-418ED4F2B931</key>
@@ -85,44 +54,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>BA9D4690-FEA1-4B4E-BCA4-6415E389E242</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>26903482-E80B-41BE-A8B9-4A2B21FDA546</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>9083B052-A5A0-452E-82EE-AF9C3CEDB023</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>CFBB8CCE-5103-42F5-BCA0-D254F74784B9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BA9D4690-FEA1-4B4E-BCA4-6415E389E242</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B6723BE8-18A9-4831-9256-170AF4A5DDE1</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Get PDF</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>DA928C5D-A8DE-4C6C-9C48-ED50EF7078AF</key>
@@ -134,6 +67,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -142,6 +77,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>DE04D298-43CF-4D43-9401-2968534855EF</key>
@@ -153,6 +90,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -161,6 +100,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>EE7EB45B-AF31-44F0-AC5F-1A66307BA397</key>
@@ -172,6 +113,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -180,6 +123,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>EF69FCD9-992B-486A-A67D-B1AE13446F89</key>
@@ -191,6 +136,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -207,32 +154,11 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>python doi.py "{query}" bibtex</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>DE04D298-43CF-4D43-9401-2968534855EF</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -244,21 +170,64 @@
 			<key>uid</key>
 			<string>82F262A3-F638-4769-9BA8-5171BFA19B06</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>python doi.py "{query}" bibtex</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DE04D298-43CF-4D43-9401-2968534855EF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
 				<string>ref</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>searching for matching articles ...</string>
 				<key>script</key>
 				<string>python crossref.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Import BibTeX</string>
 				<key>title</key>
@@ -273,24 +242,7 @@
 			<key>uid</key>
 			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
 			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>python doi.py "{query}" url</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1CC6A99C-D81B-4848-B4C7-C4E7FD477CA2</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -299,69 +251,51 @@
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>2F171503-D289-4017-876E-6A9863D79D72</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>python doi.py "{query}" ref</string>
-				<key>type</key>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>469F2D15-9086-44C9-BC8D-50AB27538486</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
+				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
+				<key>argumenttrimmode</key>
 				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Formatted reference copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>A6D0AD5E-2D1E-42F6-9397-38A21C595070</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
 				<string>book</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>searching for matching books ...</string>
 				<key>script</key>
 				<string>python gbooks.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Import BibTeX</string>
 				<key>title</key>
@@ -376,15 +310,21 @@
 			<key>uid</key>
 			<string>8EFF7A5D-A827-4688-BE75-337AD2FCA4BA</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string>python importbibtex.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -393,7 +333,7 @@
 			<key>uid</key>
 			<string>DA928C5D-A8DE-4C6C-9C48-ED50EF7078AF</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -402,11 +342,7 @@
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -418,7 +354,7 @@
 			<key>uid</key>
 			<string>FC44DC77-CABD-4CFB-9B10-ECF99B634555</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -427,27 +363,51 @@
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>454DCD07-CC8B-4443-9BD3-F570C5F4391A</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>gsref</string>
+				<string>gref</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>end query with . to execute search</string>
 				<key>script</key>
-				<string>python gscholar.py "{query}"</string>
+				<string>python gscholar2.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Import BibTeX</string>
 				<key>title</key>
@@ -462,24 +422,7 @@
 			<key>uid</key>
 			<string>B2AB1647-56C0-456D-92E0-418ED4F2B931</string>
 			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>python gscholar_bib.py "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>EE7EB45B-AF31-44F0-AC5F-1A66307BA397</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -488,11 +431,7 @@
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -504,7 +443,30 @@
 			<key>uid</key>
 			<string>EFF3CD35-A603-4B7F-AD3F-A5A3A7908C6E</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>python gscholar_bib.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EE7EB45B-AF31-44F0-AC5F-1A66307BA397</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -513,13 +475,17 @@
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>F2C391A5-E49E-4AA9-A3A8-2FCA9FE5FCF2</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -538,15 +504,21 @@
 			<key>uid</key>
 			<string>95EBDFC4-CE14-4D42-9307-570F23C6D613</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string>python pdf2doi.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -555,7 +527,7 @@
 			<key>uid</key>
 			<string>A7D5AE4F-0CA9-427E-A84E-8EB66C9F88E3</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -564,13 +536,21 @@
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>15</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1441792</integer>
+				<key>hotstring</key>
+				<string>R</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
@@ -578,228 +558,115 @@
 			<key>uid</key>
 			<string>EF69FCD9-992B-486A-A67D-B1AE13446F89</string>
 			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>python aiaa_bib.py "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BA9D4690-FEA1-4B4E-BCA4-6415E389E242</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>62</integer>
-				<key>keyword</key>
-				<string>aiaa</string>
-				<key>runningsubtext</key>
-				<string>searching for matching articles ...</string>
-				<key>script</key>
-				<string>python aiaa.py "{query}"</string>
-				<key>subtext</key>
-				<string>Import BibTeX</string>
-				<key>title</key>
-				<string>Search AIAA Aerospace Research Central</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>CFBB8CCE-5103-42F5-BCA0-D254F74784B9</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>BibTeX copied</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>26903482-E80B-41BE-A8B9-4A2B21FDA546</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>9083B052-A5A0-452E-82EE-AF9C3CEDB023</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>python aiaa_getpdf.py "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B6723BE8-18A9-4831-9256-170AF4A5DDE1</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>https://github.com/andrewning/alfred-workflows-scientific</string>
 	<key>uidata</key>
 	<dict>
-		<key>1CC6A99C-D81B-4848-B4C7-C4E7FD477CA2</key>
-		<dict>
-			<key>ypos</key>
-			<real>120</real>
-		</dict>
-		<key>26903482-E80B-41BE-A8B9-4A2B21FDA546</key>
-		<dict>
-			<key>ypos</key>
-			<real>1120</real>
-		</dict>
 		<key>2F171503-D289-4017-876E-6A9863D79D72</key>
 		<dict>
+			<key>xpos</key>
+			<integer>685</integer>
 			<key>ypos</key>
-			<real>120</real>
+			<integer>190</integer>
 		</dict>
 		<key>454DCD07-CC8B-4443-9BD3-F570C5F4391A</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>490</real>
 		</dict>
-		<key>469F2D15-9086-44C9-BC8D-50AB27538486</key>
-		<dict>
-			<key>ypos</key>
-			<real>230</real>
-		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
 		<key>82F262A3-F638-4769-9BA8-5171BFA19B06</key>
 		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>55</integer>
 		</dict>
 		<key>8EFF7A5D-A827-4688-BE75-337AD2FCA4BA</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>380</real>
 		</dict>
-		<key>9083B052-A5A0-452E-82EE-AF9C3CEDB023</key>
-		<dict>
-			<key>ypos</key>
-			<real>1230</real>
-		</dict>
 		<key>95EBDFC4-CE14-4D42-9307-570F23C6D613</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>870</real>
 		</dict>
-		<key>A6D0AD5E-2D1E-42F6-9397-38A21C595070</key>
-		<dict>
-			<key>ypos</key>
-			<real>230</real>
-		</dict>
 		<key>A7D5AE4F-0CA9-427E-A84E-8EB66C9F88E3</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>920</real>
 		</dict>
 		<key>B2AB1647-56C0-456D-92E0-418ED4F2B931</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>640</real>
 		</dict>
-		<key>B6723BE8-18A9-4831-9256-170AF4A5DDE1</key>
-		<dict>
-			<key>ypos</key>
-			<real>1230</real>
-		</dict>
-		<key>BA9D4690-FEA1-4B4E-BCA4-6415E389E242</key>
-		<dict>
-			<key>ypos</key>
-			<real>1120</real>
-		</dict>
-		<key>CFBB8CCE-5103-42F5-BCA0-D254F74784B9</key>
-		<dict>
-			<key>ypos</key>
-			<real>1120</real>
-		</dict>
 		<key>DA928C5D-A8DE-4C6C-9C48-ED50EF7078AF</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>380</real>
 		</dict>
 		<key>DE04D298-43CF-4D43-9401-2968534855EF</key>
 		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>120</integer>
 		</dict>
 		<key>EE7EB45B-AF31-44F0-AC5F-1A66307BA397</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>640</real>
 		</dict>
 		<key>EF69FCD9-992B-486A-A67D-B1AE13446F89</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>990</real>
 		</dict>
 		<key>EFF3CD35-A603-4B7F-AD3F-A5A3A7908C6E</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>640</real>
 		</dict>
 		<key>F2C391A5-E49E-4AA9-A3A8-2FCA9FE5FCF2</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>750</real>
 		</dict>
 		<key>FC44DC77-CABD-4CFB-9B10-ECF99B634555</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>380</real>
 		</dict>
